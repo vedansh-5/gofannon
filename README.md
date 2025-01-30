@@ -2,8 +2,12 @@
   
 # gofannon  
   
-**gofannon** is a collection of tools designed to enhance the capabilities of LLaMA-based language models. These tools provide additional functionality for various tasks, including mathematical operations, GitHub interactions, arXiv searches, and advanced reasoning techniques.  
-  
+**gofannon** is a collection of tools designed to enhance the capabilities of function-calling-enabled language models. These tools provide additional functionality for various tasks, including mathematical operations, GitHub interactions, arXiv searches, and advanced reasoning techniques.  
+
+## Why the name `gofanon` ?
+
+See [`why_the_name_gofannon.md`](./why_the_name_gofannon.md) for the rich story on why we chose to honor this Celtic Diety
+
 ## Features  
   
 - **Basic Math Operations**: Perform addition, subtraction, multiplication, division, and exponentiation.  
