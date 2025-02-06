@@ -1,5 +1,6 @@
 import pytest
-from gofannon.arxiv import GetArticle, Search
+from gofannon.arxiv.get_article import GetArticle
+from gofannon.arxiv.search import Search
 
 def test_get_article():
     get_article = GetArticle()

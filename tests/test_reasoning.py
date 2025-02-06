@@ -1,6 +1,8 @@
 import pytest
 from os import getenv
-from gofannon.reasoning import HierarchicalCoT, SequentialCoT, TreeOfThought
+from gofannon.reasoning.hierarchical_cot import HierarchicalCoT
+from gofannon.reasoning.sequential_cot import SequentialCoT
+from gofannon.reasoning.tree_of_thought import TreeOfThought
 depth_chart = [
     {'model_name' : "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
      'base_url' : "https://api.deepinfra.com/v1/openai",

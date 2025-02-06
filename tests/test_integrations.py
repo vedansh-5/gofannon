@@ -2,7 +2,7 @@
 
 import pytest
 from gofannon.base import BaseTool
-from gofannon.basic_math import Addition
+from gofannon.basic_math.addition import Addition
 
 # Add DummyTool subclass implementing abstract methods  
 class DummyTool(BaseTool):
