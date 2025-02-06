@@ -1,5 +1,9 @@
 import pytest
-from gofannon.basic_math import Addition, Subtraction, Multiplication, Division, Exponents
+from gofannon.basic_math.addition import Addition
+from gofannon.basic_math.subtraction import Subtraction
+from gofannon.basic_math.multiplication import Multiplication
+from gofannon.basic_math.division import Division
+from gofannon.basic_math.exponents import Exponents
 
 def test_addition():
     addition = Addition()
