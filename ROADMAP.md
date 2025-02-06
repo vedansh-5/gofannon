@@ -4,15 +4,16 @@ This project contains tools that can be used in LLMs. Each tool is designed to p
   
 ## Tools Overview  
   
-| API             | Documentation                              | Status                                |  
-|-----------------|--------------------------------------------|---------------------------------------|  
-| GitHub          | [Documentation](docs/github/index.md)      | :construction: Under Construction     |
-| Reasoning       | [Documentation](docs/reasoning/index.md)   | :construction: Under Construction        |  
-| NHSTA           | [ComplaintsByVehicle](docs/nhsta/index.md) | :construction: Under Construction        |
-| ArXiv           | [Documentation](docs/arxiv/index.md)       | :white_check_mark: Implemented        |
-| Basic Math      | [Documentation](docs/basic_math/index.md)  | :white_check_mark: Implemented        |
-| City of Chicago | 311 API                                    | :triangular_flag_on_post: Roadmap     |
-| DeepInfra       | WriteCode                                  | :triangular_flag_on_post: Roadmap     |
+| API                | Documentation                              | Status                                |  
+|--------------------|--------------------------------------------|---------------------------------------|  
+| GitHub             | [Documentation](docs/github/index.md)      | :construction: Under Construction     |
+| Reasoning          | [Documentation](docs/reasoning/index.md)   | :construction: Under Construction        | 
+| HeadlessWebBrowser | [Documentation](docs/headless_browswer) | :construction: Under Construction | 
+| NHSTA              | [ComplaintsByVehicle](docs/nhsta/index.md) | :construction: Under Construction        |
+| ArXiv              | [Documentation](docs/arxiv/index.md)       | :white_check_mark: Implemented        |
+| Basic Math         | [Documentation](docs/basic_math/index.md)  | :white_check_mark: Implemented        |
+| City of Chicago    | 311 API                                    | :triangular_flag_on_post: Roadmap     |
+| DeepInfra          | WriteCode                                  | :triangular_flag_on_post: Roadmap     |
  
 ## Status Icons  
   
