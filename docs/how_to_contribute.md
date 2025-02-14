@@ -162,7 +162,7 @@ git commit --signoff
 
 The `--signoff` flag will automatically append a "Signed-off-by" line to your 
 commit message with your name and email address. You can learn more about DCO 
-sign off on the [GitHub documentation](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/signing-commits).
+sign off on the [GitHub documentation](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits).
 
 Push your branch:  
 ```bash  
