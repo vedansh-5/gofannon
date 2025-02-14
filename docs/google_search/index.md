@@ -6,7 +6,7 @@
 2.  Create a new project or select an existing one.
 3.  Enable the Custom Search API for your project.
 4.  Create an API key.
-5.  Create a Custom Search Engine and obtain its ID.
+5.  [Create a Custom Search Engine and obtain its ID.](https://developers.google.com/custom-search/docs/tutorial/creatingcse)
 
 ## Status
 

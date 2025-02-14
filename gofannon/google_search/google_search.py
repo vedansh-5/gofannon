@@ -14,9 +14,6 @@ class GoogleSearch(BaseTool):
         self.name = name
         self.API_SERVICE = 'google_search'
 
-        if not self.api_key or not self.engine_id:
-            raise ValueError("Google Search API key and Engine ID must be provided.")
-
     @property
     def definition(self):
         return {
