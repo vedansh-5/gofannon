@@ -143,22 +143,35 @@ assert result == expected_value
 
 ## 7. Committing Your Changes
 
-Create a new branch for your feature:
-
-```bash
-git checkout -b feature/new-function
+Create a new branch for your feature:  
+```bash  
+git checkout -b feature/new-function  
 ```
 
-Add and commit your changes:
-```bash
-git add .
-git commit -m "Add new_function implementation"
+Add and commit your changes. It's essential to include a DCO (Developer 
+Certificate of Origin) sign off in your commit message. This sign off is a 
+simple way for contributors to certify that they have the right to submit their 
+work under the open-source license. By signing off on your commit, you're 
+confirming that you're the original author of the work or have the necessary 
+permissions to contribute it.
+
+```bash  
+git add --all  
+git commit --signoff  
 ```
 
-Push your branch:
-```bash
-git push origin feature/new-function
+The `--signoff` flag will automatically append a "Signed-off-by" line to your 
+commit message with your name and email address. You can learn more about DCO 
+sign off on the [GitHub documentation](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/signing-commits).
+
+Push your branch:  
+```bash  
+git push origin feature/new-function  
 ```
+
+By including the DCO sign off, you're helping to ensure the long-term 
+sustainability of the project and making it easier for others to use and 
+distribute the code.
 
 ## 8. Creating a Pull Request
 
