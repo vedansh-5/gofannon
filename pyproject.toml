@@ -22,7 +22,7 @@ selenium = { version = "^4.10.0", optional = true }
 google-api-python-client = { version = "^2.161.0", optional = true}
 
 [tool.poetry.extras]
-testing = ["pytest", "langchain", "pydantic", "smolagents", "selenium"]
+testing = ["pytest"]
 langchain = ["langchain", "pydantic"]
 smolagents = ["smolagents"]
 headless_browser = ["selenium"]
