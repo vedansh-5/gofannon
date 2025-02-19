@@ -21,29 +21,6 @@ Outline the proposed interface for the function, including:
 - Return value (with type and description)
 - Any error conditions or exceptions
 
-```python  
-# Example format  
-class NewFunction(BaseTool):  
-    def __init__(self):  
-        super().__init__()  
-      
-    @property  
-    def definition(self):  
-        return {  
-            "name": "new_function",  
-            "description": "Description of what the function does",  
-            "parameters": {  
-                "param1": {  
-                    "type": "string",  
-                    "description": "Description of param1"  
-                }  
-            }  
-        }  
-      
-    def fn(self, param1):  
-        # Implementation goes here  
-        pass  
-```
 
 ### Dependencies
 List any external dependencies or requirements for this function.
