@@ -4,6 +4,7 @@ from ..base import BaseTool
 from ..config import FunctionRegistry
 
 import logging
+import json
 
 import requests
 from jsonschema import validate
@@ -27,12 +28,19 @@ valid_iss_schema = {
     "required": ["message", "timestamp", "iss_position"],
 }
 
+error_response_string = "Error: The ISS endpoint returned an error. No location for the ISS can be determined"
+error_response_json = {
+    "message": "failure",
+    "error": "Error: The ISS endpoint returned an error. No location for the ISS can be determined",
+}
+
 
 @FunctionRegistry.register
 class IssLocator(BaseTool):
-    def __init__(self, name="iss_locator"):
+    def __init__(self, name="iss_locator", format_json=True):
         super().__init__()
         self.name = name
+        self.format_json = format_json
 
     @property
     def definition(self):
@@ -46,17 +54,33 @@ class IssLocator(BaseTool):
             },
         }
 
-    # This function will return one of two strings:
+    # Function returns one of two messages, depending on the requested format:
     #
-    # "According to OpenNotify.org, the International Space Station can be found at (lat, long) (x,y)"
-    # or
-    # "The ISS endpoint returned an error. No location for the ISS can be determined"
+    # With json=False, Returns one of two strings:
+    #   "According to OpenNotify.org, the International Space Station can be found at (lat, long) (x,y)"
+    #   or
+    #   "The ISS endpoint returned an error. No location for the ISS can be determined"
+    #
+    # With json=True, the following strings:
+    #   "{
+    #        "message": "success",
+    #       "timestamp": 1739999640,
+    #       "iss_position": {"longitude": "-11.6885", "latitude": "-50.0654"},
+    #   }"
+    #   or
+    #   "{
+    #       "message": "failure",
+    #       "error": "Error: The ISS endpoint returned an error. No location for the ISS can be determined",
+    #   }"
 
     def fn(self):
         base_url = "http://api.open-notify.org/iss-now.json"
         logger.debug(f"Fetching ISS pos from OpenNotify.org at {base_url}")
-        err_msg = "Error: The ISS endpoint returned an error. No location for the ISS can be determined"
-        response = err_msg
+        if self.format_json:
+            response = json.dumps(error_response_json)
+        else:
+            response = error_response_string
+
         try:
             http_response = requests.get(base_url)
             response_json = http_response.json()
@@ -67,7 +91,10 @@ class IssLocator(BaseTool):
             lat = float(response_json["iss_position"]["latitude"])
             long = float(response_json["iss_position"]["longitude"])
             if (lat > -90 and lat < 90) and (long > -180 and long < 180):
-                response = f"According to OpenNotify.org, the International Space Station can be found at (lat, long) ({lat},{long})"
+                if self.format_json:
+                    response = json.dumps(response_json)
+                else:
+                    response = f"According to OpenNotify.org, the International Space Station can be found at (lat, long) ({lat}, {long})"
             else:
                 raise ValueError(f"(latitude, longitude) out of range: ({lat},{long})")
         except requests.exceptions.HTTPError as errh:
