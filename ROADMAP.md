@@ -11,6 +11,7 @@ This project contains tools that can be used in LLMs. Each tool is designed to p
 | HeadlessWebBrowser | [Documentation](docs/headless_browswer) | :construction: Under Construction | 
 | NHSTA              | [ComplaintsByVehicle](docs/nhsta/index.md) | :construction: Under Construction        |
 | Google Search      | [Documentation](docs/google_search/index.md) | :construction: Under Construction |
+| Open Notify Space | [Documentation](docs/open_notify_space/index.md) | :white_check_mark: Implemeted |
 | ArXiv              | [Documentation](docs/arxiv/index.md)       | :white_check_mark: Implemented        |
 | Basic Math         | [Documentation](docs/basic_math/index.md)  | :white_check_mark: Implemented        |
 | City of Chicago    | 311 API                                    | :triangular_flag_on_post: Roadmap     |
