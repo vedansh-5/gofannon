@@ -56,12 +56,12 @@ class IssLocator(BaseTool):
 
     # Function returns one of two messages, depending on the requested format:
     #
-    # With json=False, Returns one of two strings:
+    # With format_json=False, Returns one of two strings:
     #   "According to OpenNotify.org, the International Space Station can be found at (lat, long) (x,y)"
     #   or
     #   "The ISS endpoint returned an error. No location for the ISS can be determined"
     #
-    # With json=True, the following strings:
+    # With format_json=True (default), the following strings:
     #   "{
     #        "message": "success",
     #       "timestamp": 1739999640,
