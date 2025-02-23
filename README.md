@@ -37,7 +37,7 @@ Each tool comes with its own documentation, which can be found in the `docs/` di
 To install gofannon, simply clone the repository and install the required dependencies:  
   
 ```bash  
-git clone https://github.com/your-repo/gofannon.git  
+git clone https://github.com/The-AI-Alliance/gofannon.git  
 cd gofannon  
 pip install -r requirements.txt
 ```
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 or 
 
 ```
-pip install git+https://github.com/your-repo/gofannon.git
+pip install git+https://github.com/The-AI-Alliance/gofannon.git
 ```
 
 ## License  
