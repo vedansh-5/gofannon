@@ -21,7 +21,7 @@ jobs:
           python website/scripts/sync_docs.py
           git config --global user.name "Docs Bot"
           git config --global user.email "docs@example.com"
-          git add website/docs/
+          git add -f website/docs/
           git commit -m "Update documentation" || echo "No docs changes"
 
       - name: Build site
