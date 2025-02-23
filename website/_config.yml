@@ -1,0 +1,19 @@
+title: Gofannon Tools
+description: >-
+  Cross-framework AI tooling & open source education  
+baseurl: ""
+url: "https://the-ai-alliance.github.io/gofannon"
+plugins:
+  - jekyll-sitemap
+
+collections:
+  docs:
+    output: true
+    permalink: /docs/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: docs  
