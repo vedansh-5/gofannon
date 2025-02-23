@@ -25,6 +25,7 @@ jobs:
           git commit -m "Update documentation" || echo "No docs changes"
 
       - name: Build site
+        working-directory: ./website
         run: |
           gem install bundler
           bundle install
@@ -35,4 +36,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          publish_dir: ./website/_site
