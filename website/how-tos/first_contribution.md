@@ -70,7 +70,7 @@ Welcome to the Gofannon community! This guide will walk you through making your 
    ```
 
 2. **Make Your Changes**
-    - Follow the [contribution guidelines](CONTRIBUTING.md)
+    - Follow the [contribution guidelines](https://github.com/The-AI-Alliance/gofannon/blob/main/CONTRIBUTING.md)
     - Write tests for your changes
     - Update documentation if needed
 

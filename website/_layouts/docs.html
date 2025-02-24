@@ -10,16 +10,16 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="/">Gofannon</a>
+        <a class="navbar-brand" href="{{ '/' | relative_url}}">Gofannon</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="/docs">Docs</a></li>
-                <li class="nav-item"><a class="nav-link" href="/how-tos">How-Tos</a></li>
-                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="/community">Community</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ '/docs' | relative_url }}">Docs</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ '/how-tos' | relative_url }}">How-Tos</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ '/about' | relative_url }}">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ '/community' | relative_url }}">Community</a></li>
             </ul>
         </div>
     </div>
@@ -27,13 +27,11 @@
 
 <main class="container mt-4">
     <div class="row">
-        <!-- Sidebar for navigation -->
         <aside class="col-md-3">
             <div class="list-group sticky-top">
-                <!-- Example of static links, replace with dynamic content as needed -->
-                <a href="/docs/index.html" class="list-group-item list-group-item-action">Home</a>
-                <a href="/docs/cross-framework_compatibility.html" class="list-group-item list-group-item-action">Cross Framework Compatability</a>
-                <a href="/docs/how_to_contribute.html" class="list-group-item list-group-item-action">How To Contribute a New Tool</a>
+                <a href="{{ '/docs/index.html' | relative_url }}" class="list-group-item list-group-item-action">Home</a>
+                <a href="{{ '/docs/cross-framework_compatibility.html' | relative_url }}" class="list-group-item list-group-item-action">Cross Framework Compatability</a>
+                <a href="{{ '/docs/how_to_contribute.html' | relative_url }}" class="list-group-item list-group-item-action">How To Contribute a New Tool</a>
             </div>
         </aside>
 
