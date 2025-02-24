@@ -8,22 +8,7 @@
     <link href="/assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="{{ '/' | relative_url}}">Gofannon</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="{{ '/docs' | relative_url }}">Docs</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ '/how-tos' | relative_url }}">How-Tos</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ '/about' | relative_url }}">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ '/community' | relative_url }}">Community</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+{% include navbar.html %}
 
 <main class="container mt-4">
     {{ content }}
@@ -36,13 +21,11 @@
                 <h5>Gofannon</h5>
                 <p>Empowering AI with legendary tools</p>
             </div>
-            <div class="col-md-6 text-end">
-                <a href="https://discord.gg/YOUR_INVITE_CODE" class="btn btn-outline-light">Join Discord</a>
-            </div>
+            {% include discord.html %}
         </div>
     </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
+</html>  
