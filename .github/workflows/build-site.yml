@@ -1,7 +1,7 @@
 name: Build and Deploy Site
 
 on:
-  pull_request:
+  pull_request_target:
     types:
       - closed
 
