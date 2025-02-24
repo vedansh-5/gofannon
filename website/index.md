@@ -7,7 +7,7 @@ title: Home
     <div class="container text-center">  
         <h1 class="display-4">Gofannon Tools</h1>  
         <p class="lead">Forging next-generation AI capabilities</p>  
-        <a href="/docs" class="btn btn-light btn-lg">Get Started</a>  
+        <a href="{{ '/docs' | relative_url }}" class="btn btn-light btn-lg">Get Started</a>  
     </div>  
 </div>  
 
@@ -23,7 +23,7 @@ title: Home
         <div class="col-md-6">  
             <h2>Open Source Education</h2>  
             <p>Learn AI development through practical contributions. We provide mentorship and guided pathways for new contributors.</p>  
-            <a href="/how-tos" class="btn btn-outline-primary">Contribution Guide</a>  
+            <a href="{{ '/how-tos' | relative_url }}" class="btn btn-outline-primary">Contribution Guide</a>  
         </div>  
     </div>  
 </div>  

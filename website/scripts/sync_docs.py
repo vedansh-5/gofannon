@@ -12,8 +12,13 @@ title: {title}
 """
 
 def replace_md_with_html(content):
-    # Regular expression to find markdown links
-    return re.sub(r"(\]\()(.*?)(\.md)(\))", r"\1\2.html\4", content)
+    # Match internal links (not starting with http:// or https://)
+    pattern = re.compile(
+        r'(\]\()((?!https?://)(.*?))\.md(\))',
+        flags=re.IGNORECASE
+    )
+    # Replace with HTML extension and relative_url filter
+    return pattern.sub(r'\1{{ "\2.html" | relative_url }}\4', content)
 
 def process_md_files(src, dest):
     for item in os.listdir(src):
