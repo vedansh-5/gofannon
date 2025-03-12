@@ -8,21 +8,18 @@ See [Why the Name Gofannon?](/about/the_name_gofannon/) for the rich story on wh
 
 ## Contributors
  
-See the list of contributors [here](https://github.com/The-AI-Alliance/gofannon/graphs/contributors).
+See the full list of contributors [here](https://github.com/The-AI-Alliance/gofannon/graphs/contributors).
 
-### Community Leadership
+### Core Contributors  
 
-| Name            | GitHub Handle       | Affiliation |
-|----------------|-------------------|------------|
-| Andrew Musselman | @andrewmusselman  | Speedchain  |
-| Steve Blackmon  | @steveblackmon     | Meta       |
-| Trevor Grant    | @rawkintrevo       | IBM        |
+| Name                 | GitHub Handle       | Affiliation    |
+|----------------------|---------------------|----------------|
+| **Andrew Musselman** | @andrewmusselman    | Speedchain     |
+| **Steve Blackmon**   | @steveblackmon      | Meta           |
+| **Trevor Grant**     | @rawkintrevo        | IBM            |
+| Joe Olson            | @jolson-ibm         | IBM            |
 
-### Core Contributors
-
-| Name            | GitHub Handle       | Affiliation |
-|----------------|-------------------|------------|
-| Joe Olson | @jolson-ibm  | IBM  |
+**Entries in bold indicate Project Leads.**
 
 ## Our Mission
 
