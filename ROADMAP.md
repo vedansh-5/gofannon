@@ -13,13 +13,7 @@
 - [Publish to PyPi](https://github.com/The-AI-Alliance/gofannon/pull/73)
 - [Differentiating workflows between website/docs and code](https://github.com/The-AI-Alliance/gofannon/pull/72)
 - [Introduce LLM PR Reviews](https://github.com/The-AI-Alliance/gofannon/pull/68)
-- [replace llama models with large language models](https://github.com/The-AI-Alliance/gofannon/pull/63)
 - [Add AI Alliance Linkbacks](https://github.com/The-AI-Alliance/gofannon/pull/60)
-- [Refeactor to includes](https://github.com/The-AI-Alliance/gofannon/pull/58)
-- [Add live discord link](https://github.com/The-AI-Alliance/gofannon/pull/55)
-- [Add Relative Links](https://github.com/The-AI-Alliance/gofannon/pull/52)
-- [Add docs](https://github.com/The-AI-Alliance/gofannon/pull/48)
-- [Update script path](https://github.com/The-AI-Alliance/gofannon/pull/47)
 - [Fixed typo in the GitHub URLs for the project.](https://github.com/The-AI-Alliance/gofannon/pull/45)
 
 ## Under Construction 🚧
