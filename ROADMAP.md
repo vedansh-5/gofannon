@@ -13,8 +13,6 @@
 - [Publish to PyPi](https://github.com/The-AI-Alliance/gofannon/pull/73)
 - [Differentiating workflows between website/docs and code](https://github.com/The-AI-Alliance/gofannon/pull/72)
 - [Introduce LLM PR Reviews](https://github.com/The-AI-Alliance/gofannon/pull/68)
-- [Add AI Alliance Linkbacks](https://github.com/The-AI-Alliance/gofannon/pull/60)
-- [Fixed typo in the GitHub URLs for the project.](https://github.com/The-AI-Alliance/gofannon/pull/45)
 
 ## Under Construction 🚧
 - [AI Alliance Labs - standup a SQL database](https://github.com/The-AI-Alliance/gofannon/issues/144)
