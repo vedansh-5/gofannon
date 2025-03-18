@@ -8,16 +8,10 @@
 
 ## Complete ✅
 - [Automate Roadmap Creation](https://github.com/The-AI-Alliance/gofannon/pull/150)
-- [Closes #35](https://github.com/The-AI-Alliance/gofannon/pull/107)
-- [[Docs/Website] Update the Readme](https://github.com/The-AI-Alliance/gofannon/pull/103)
-- [Install Poetry](https://github.com/The-AI-Alliance/gofannon/pull/90)
+- [AWS Bedrock Agents (boto3)](https://github.com/The-AI-Alliance/gofannon/pull/107)
 - [Stub out Integration Tests](https://github.com/The-AI-Alliance/gofannon/pull/89)
-- [remove config.yml](https://github.com/The-AI-Alliance/gofannon/pull/85)
-- [Change to not allow blank PRs](https://github.com/The-AI-Alliance/gofannon/pull/84)
-- [Added config file for PR template selection](https://github.com/The-AI-Alliance/gofannon/pull/82)
-- [Updated Roadmap.md](https://github.com/The-AI-Alliance/gofannon/pull/81)
 - [Publish to PyPi](https://github.com/The-AI-Alliance/gofannon/pull/73)
-- [69differentiating workflows between website/docs and code](https://github.com/The-AI-Alliance/gofannon/pull/72)
+- [Differentiating workflows between website/docs and code](https://github.com/The-AI-Alliance/gofannon/pull/72)
 - [Introduce LLM PR Reviews](https://github.com/The-AI-Alliance/gofannon/pull/68)
 - [replace llama models with large language models](https://github.com/The-AI-Alliance/gofannon/pull/63)
 - [Add AI Alliance Linkbacks](https://github.com/The-AI-Alliance/gofannon/pull/60)
