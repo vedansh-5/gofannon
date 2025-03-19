@@ -20,8 +20,8 @@
 - [AI Alliance Labs - standup a SQL database](https://github.com/The-AI-Alliance/gofannon/issues/144)
 
 ## In the Roadmap 📅
-- [[Issue] Rewrite issues with new Framework template](https://github.com/The-AI-Alliance/gofannon/issues/160)
-- [[Issue] CDK backend in addition to boto3](https://github.com/The-AI-Alliance/gofannon/issues/115)
+- [[Framework Proposal] Genkit Integration](https://github.com/The-AI-Alliance/gofannon/issues/163)
+- [[Framework Proposal] AWS Bedrock CDK Integration](https://github.com/The-AI-Alliance/gofannon/issues/162)
 - [[Issue] Restore type hints on the boto3, smol_agents and langchain backends](https://github.com/The-AI-Alliance/gofannon/issues/114)
 - [[Issue] Need to create boto3 integration tests](https://github.com/The-AI-Alliance/gofannon/issues/113)
 - [[Issue] Review boto3 unit tests](https://github.com/The-AI-Alliance/gofannon/issues/112)
