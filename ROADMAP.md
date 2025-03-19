@@ -7,6 +7,7 @@
 -->
 
 ## Complete ✅
+- [Framework Proposal Template](https://github.com/The-AI-Alliance/gofannon/pull/159)
 - [Automate Roadmap Creation](https://github.com/The-AI-Alliance/gofannon/pull/150)
 - [AWS Bedrock Agents (boto3)](https://github.com/The-AI-Alliance/gofannon/pull/107)
 - [Stub out Integration Tests](https://github.com/The-AI-Alliance/gofannon/pull/89)
@@ -15,9 +16,11 @@
 - [Introduce LLM PR Reviews](https://github.com/The-AI-Alliance/gofannon/pull/68)
 
 ## Under Construction 🚧
+- [[Framework Proposal] Llamastack](https://github.com/The-AI-Alliance/gofannon/issues/161)
 - [AI Alliance Labs - standup a SQL database](https://github.com/The-AI-Alliance/gofannon/issues/144)
 
 ## In the Roadmap 📅
+- [[Issue] Rewrite issues with new Framework template](https://github.com/The-AI-Alliance/gofannon/issues/160)
 - [[Issue] CDK backend in addition to boto3](https://github.com/The-AI-Alliance/gofannon/issues/115)
 - [[Issue] Restore type hints on the boto3, smol_agents and langchain backends](https://github.com/The-AI-Alliance/gofannon/issues/114)
 - [[Issue] Need to create boto3 integration tests](https://github.com/The-AI-Alliance/gofannon/issues/113)
