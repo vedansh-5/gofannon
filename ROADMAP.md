@@ -7,6 +7,7 @@
 -->
 
 ## Complete ✅
+- [Update logo and favicon](https://github.com/The-AI-Alliance/gofannon/pull/165)
 - [Framework Proposal Template](https://github.com/The-AI-Alliance/gofannon/pull/159)
 - [Automate Roadmap Creation](https://github.com/The-AI-Alliance/gofannon/pull/150)
 - [AWS Bedrock Agents (boto3)](https://github.com/The-AI-Alliance/gofannon/pull/107)
@@ -16,7 +17,6 @@
 - [Introduce LLM PR Reviews](https://github.com/The-AI-Alliance/gofannon/pull/68)
 
 ## Under Construction 🚧
-- [[Docs/Website] New Logo / Favicon](https://github.com/The-AI-Alliance/gofannon/issues/164)
 - [[Framework Proposal] Llamastack](https://github.com/The-AI-Alliance/gofannon/issues/161)
 - [AI Alliance Labs - standup a SQL database](https://github.com/The-AI-Alliance/gofannon/issues/144)
 
