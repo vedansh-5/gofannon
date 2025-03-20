@@ -17,6 +17,7 @@
 - [Introduce LLM PR Reviews](https://github.com/The-AI-Alliance/gofannon/pull/68)
 
 ## Under Construction 🚧
+- [[Docs/Website] how to commit a function documentation](https://github.com/The-AI-Alliance/gofannon/issues/166)
 - [[Framework Proposal] Llamastack](https://github.com/The-AI-Alliance/gofannon/issues/161)
 - [AI Alliance Labs - standup a SQL database](https://github.com/The-AI-Alliance/gofannon/issues/144)
 
