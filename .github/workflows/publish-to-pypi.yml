@@ -41,6 +41,7 @@ jobs:
           RELEASE_TAG=v${{ steps.version.outputs.PYPI_VERSION }}
           git tag -a ${RELEASE_TAG} -m "Weekly release ${RELEASE_TAG}"
           git push origin ${RELEASE_TAG}
+          echo "RELEASE_TAG=${RELEASE_TAG}" >> $GITHUB_ENV
 
       - name: Install poetry
         run: |
