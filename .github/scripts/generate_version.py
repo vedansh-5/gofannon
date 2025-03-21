@@ -59,6 +59,10 @@ def main():
         f.write(f"PYPI_VERSION={final_version}\n")
         f.write(f"RELEASE_TAG=v{final_version}\n")
 
+    with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+        f.write(f"PYPI_VERSION={final_version}\n")
+        f.write(f"RELEASE_TAG=v{final_version}\n")
+        
     print(f"Current version: {current_version}")
     print(f"New version: {final_version}")
 
