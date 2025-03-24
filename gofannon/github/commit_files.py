@@ -88,7 +88,8 @@ class CommitFiles(BaseTool):
         if branch in repo.heads:
             # If it does, checkout the branch and pull the latest changes
             repo.git.checkout(branch)
-            repo.git.pull()
+            # Explicit pull from origin/branch to avoid tracking dependency
+            repo.git.pull('origin', branch)
         else:
             # If it does not exist, checkout the base branch and create a new branch
             try:
@@ -112,5 +113,6 @@ class CommitFiles(BaseTool):
         repo.index.commit(commit_msg)
 
         origin = repo.remotes.origin
-        origin.push(branch)
+        # Push with tracking (still recommended)
+        repo.git.push('-u', 'origin', branch)
         return "Files committed and pushed successfully"
