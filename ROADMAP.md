@@ -7,6 +7,8 @@
 -->
 
 ## Complete ✅
+- [Add Release Notes to Weekly Releases](https://github.com/The-AI-Alliance/gofannon/pull/170)
+- [[DOCS] How to conribute a Tool](https://github.com/The-AI-Alliance/gofannon/pull/167)
 - [Update logo and favicon](https://github.com/The-AI-Alliance/gofannon/pull/165)
 - [Framework Proposal Template](https://github.com/The-AI-Alliance/gofannon/pull/159)
 - [Automate Roadmap Creation](https://github.com/The-AI-Alliance/gofannon/pull/150)
@@ -17,11 +19,12 @@
 - [Introduce LLM PR Reviews](https://github.com/The-AI-Alliance/gofannon/pull/68)
 
 ## Under Construction 🚧
-- [[Docs/Website] how to commit a function documentation](https://github.com/The-AI-Alliance/gofannon/issues/166)
 - [[Framework Proposal] Llamastack](https://github.com/The-AI-Alliance/gofannon/issues/161)
 - [AI Alliance Labs - standup a SQL database](https://github.com/The-AI-Alliance/gofannon/issues/144)
 
 ## In the Roadmap 📅
+- [[EXAMPLES] rerun `examples/smolagents+gofannon_quickstart.ipynb` to get rid of warnings and errors](https://github.com/The-AI-Alliance/gofannon/issues/176)
+- [[Docs/Website] explicit how to guide on updating the website](https://github.com/The-AI-Alliance/gofannon/issues/168)
 - [[Framework Proposal] Genkit Integration](https://github.com/The-AI-Alliance/gofannon/issues/163)
 - [[Framework Proposal] AWS Bedrock CDK Integration](https://github.com/The-AI-Alliance/gofannon/issues/162)
 - [[Issue] Restore type hints on the boto3, smol_agents and langchain backends](https://github.com/The-AI-Alliance/gofannon/issues/114)
@@ -29,4 +32,3 @@
 - [[Issue] Review boto3 unit tests](https://github.com/The-AI-Alliance/gofannon/issues/112)
 - [[Issue] Python Black Formatting Standard](https://github.com/The-AI-Alliance/gofannon/issues/108)
 - [[Issue] Setup guardrails to prevent people from making feature branches instead of forking.](https://github.com/The-AI-Alliance/gofannon/issues/65)
-- [[Issue] Make example on VertexAI](https://github.com/The-AI-Alliance/gofannon/issues/64)
