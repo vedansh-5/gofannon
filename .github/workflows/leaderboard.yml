@@ -1,0 +1,50 @@
+name: Update Leaderboard
+
+on:
+  workflow_dispatch: # Manual trigger
+  schedule:
+    - cron: '0 0 * * 1' # Weekly at midnight UTC
+
+jobs:
+  update-leaderboard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Get full commit history
+
+      - name: Add upstream remote
+        run: |
+          git remote add upstream https://github.com/The-AI-Alliance/gofannon.git
+          git fetch upstream
+          echo "UPSTREAM_OWNER=$(echo 'The-AI-Alliance')" >> $GITHUB_ENV
+          echo "UPSTREAM_REPO=$(echo 'gofannon')" >> $GITHUB_ENV
+        if: ${{ github.event.repository.fork }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: '.github/scripts/package-lock.json'
+
+      - name: Install dependencies
+        working-directory: .github/scripts
+        run: npm ci
+
+      - name: Generate Leaderboard
+        run: node .github/scripts/calculate_leaderboard.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Use upstream details if in fork, else current repo
+          REPO_OWNER: ${{ env.UPSTREAM_OWNER || github.repository_owner }}
+          REPO_NAME: ${{ env.UPSTREAM_REPO || github.event.repository.name }}
+
+      - name: Commit Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Update leaderboard rankings'
+          file_pattern: |
+            website/leaderboard.md
+            .github/scripts/package-lock.json

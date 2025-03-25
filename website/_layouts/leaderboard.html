@@ -1,0 +1,121 @@
+---
+layout: default
+---
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    .leaderboard-container {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        text-align: center;
+        padding: 2rem 0;
+        background-color: #0f0f23;
+        color: #00ff00;
+        font-family: 'Press Start 2P', cursive;
+        min-height: 100vh;
+    }
+
+    .leaderboard-heading {
+        font-size: 3rem;
+        margin: 2rem 0;
+        color: #ff00ff;
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+        letter-spacing: 0;
+        animation: neon-glow 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes neon-glow {
+        from {
+            text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+        }
+        to {
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+        }
+    }
+
+    .leaderboard-gif {
+        width: 100%;
+        height: auto;
+        max-height: 50vh;
+        object-fit: cover;
+        margin: 2rem 0;
+        border: 4px solid #00ff00;
+        box-shadow: 0 0 20px #00ff00;
+    }
+
+    .leaderboard-table {
+        width: 90%;
+        margin: 2rem auto;
+        border: 4px solid #00ff00;
+        border-collapse: collapse;
+        box-shadow: 0 0 20px #00ff00;
+    }
+
+    .leaderboard-table th {
+        background-color: #003300;
+        color: #00ff00;
+        padding: 1.5rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-bottom: 4px solid #00ff00;
+    }
+
+    .leaderboard-table td {
+        padding: 1.2rem;
+        border-bottom: 2px solid #00ff00;
+        font-size: 1rem;
+    }
+
+    .leaderboard-table tr:nth-child(even) {
+        background-color: rgba(0, 255, 0, 0.05);
+    }
+
+    .leaderboard-table tr:hover {
+        background-color: rgba(0, 255, 0, 0.1);
+        text-shadow: 0 0 5px #00ff00;
+    }
+
+    .leaderboard-table a {
+        color: #ffff00;
+        text-decoration: none;
+    }
+
+    .leaderboard-table a:hover {
+        text-shadow: 0 0 10px #ffff00;
+    }
+</style>
+
+<div class="leaderboard-container">
+    <h1 class="leaderboard-heading">LEADERBOARD</h1>
+
+    <!-- Animated GIF -->
+    <img
+            src="{{ '/assets/images/leaderboard-animation.gif' | relative_url }}"
+            alt="8-bit leaderboard animation"
+            class="leaderboard-gif"
+            loading="lazy"
+    >
+
+    <!-- Leaderboard content -->
+    <div class="leaderboard-content">
+        {{ content }}
+    </div>
+</div>
+
+<script>
+    // Apply retro styling to tables
+    document.addEventListener('DOMContentLoaded', function() {
+        const tables = document.querySelectorAll('.leaderboard-content table');
+        tables.forEach(table => {
+            table.classList.add('leaderboard-table');
+
+            // Add pixelated effect to table cells
+            const cells = table.querySelectorAll('td, th');
+            cells.forEach(cell => {
+                cell.style.fontFamily = "'Press Start 2P', cursive";
+            });
+        });
+    });
+</script>
