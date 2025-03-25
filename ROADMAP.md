@@ -7,6 +7,8 @@
 -->
 
 ## Complete ✅
+- [[bug] Set git tracking in CommitFiles](https://github.com/The-AI-Alliance/gofannon/pull/181)
+- [Add bug report template](https://github.com/The-AI-Alliance/gofannon/pull/179)
 - [Add Release Notes to Weekly Releases](https://github.com/The-AI-Alliance/gofannon/pull/170)
 - [[DOCS] How to conribute a Tool](https://github.com/The-AI-Alliance/gofannon/pull/167)
 - [Update logo and favicon](https://github.com/The-AI-Alliance/gofannon/pull/165)
@@ -16,7 +18,6 @@
 - [Stub out Integration Tests](https://github.com/The-AI-Alliance/gofannon/pull/89)
 - [Publish to PyPi](https://github.com/The-AI-Alliance/gofannon/pull/73)
 - [Differentiating workflows between website/docs and code](https://github.com/The-AI-Alliance/gofannon/pull/72)
-- [Introduce LLM PR Reviews](https://github.com/The-AI-Alliance/gofannon/pull/68)
 
 ## Under Construction 🚧
 - [[Framework Proposal] Llamastack](https://github.com/The-AI-Alliance/gofannon/issues/161)
@@ -31,4 +32,3 @@
 - [[Issue] Need to create boto3 integration tests](https://github.com/The-AI-Alliance/gofannon/issues/113)
 - [[Issue] Review boto3 unit tests](https://github.com/The-AI-Alliance/gofannon/issues/112)
 - [[Issue] Python Black Formatting Standard](https://github.com/The-AI-Alliance/gofannon/issues/108)
-- [[Issue] Setup guardrails to prevent people from making feature branches instead of forking.](https://github.com/The-AI-Alliance/gofannon/issues/65)
