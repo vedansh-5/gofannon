@@ -18,6 +18,7 @@ See the full list of contributors [here](https://the-ai-alliance.github.io/gofan
 | **Steve Blackmon**   | @steveblackmon      | Meta           |
 | **Trevor Grant**     | @rawkintrevo        | IBM            |
 | Joe Olson            | @jolson-ibm         | IBM            |
+| Vedansh Saini        | @vedansh-5          |             |
 
 **Entries in bold indicate Project Leads.**
 
