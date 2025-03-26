@@ -1,6 +1,11 @@
 name: Build and Deploy Site
 
 on:
+  workflow_dispatch:  # Allow manual trigger
+  push:
+    paths:
+      - 'website/**'
+      - 'docs/**'
   pull_request_target:
     paths:
       - 'docs/**'

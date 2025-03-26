@@ -1,0 +1,110 @@
+<div class="modal fade" id="scoringModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark text-light">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title">🎮 SCORING SYSTEM</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-4 text-success">Points are awarded based on labels from merged PRs:</p>
+
+                <div class="row g-3">
+                    <!-- Bug Fix -->
+                    <div class="col-12 col-md-6">
+                        <div class="card bg-black border-success">
+                            <div class="card-body p-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-success me-2">BUG</span>
+                                    <h5 class="mb-0 text-success">+250</h5>
+                                </div>
+                                <small class="text-muted">Fixing critical issues</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cowboy Penalty -->
+                    <div class="col-12 col-md-6">
+                        <div class="card bg-black border-danger">
+                            <div class="card-body p-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-danger me-2">COWBOY</span>
+                                    <h5 class="mb-0 text-danger">-500</h5>
+                                </div>
+                                <small class="text-muted">Merging without review</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Docs -->
+                    <div class="col-12 col-md-6">
+                        <div class="card bg-black border-success">
+                            <div class="card-body p-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-success me-2">DOCS</span>
+                                    <h5 class="mb-0 text-success">+100</h5>
+                                </div>
+                                <small class="text-muted">Documentation improvements</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Example -->
+                    <div class="col-12 col-md-6">
+                        <div class="card bg-black border-success">
+                            <div class="card-body p-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-success me-2">EXAMPLE</span>
+                                    <h5 class="mb-0 text-success">+300</h5>
+                                </div>
+                                <small class="text-muted">Sample code contributions</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Framework -->
+                    <div class="col-12 col-md-6">
+                        <div class="card bg-black border-success">
+                            <div class="card-body p-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-success me-2">FRAMEWORK</span>
+                                    <h5 class="mb-0 text-success">+2500</h5>
+                                </div>
+                                <small class="text-muted">Major framework work</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Infra -->
+                    <div class="col-12 col-md-6">
+                        <div class="card bg-black border-success">
+                            <div class="card-body p-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-success me-2">INFRA</span>
+                                    <h5 class="mb-0 text-success">+200</h5>
+                                </div>
+                                <small class="text-muted">Infrastructure improvements</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tool -->
+                    <div class="col-12 col-md-6">
+                        <div class="card bg-black border-success">
+                            <div class="card-body p-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-success me-2">TOOL</span>
+                                    <h5 class="mb-0 text-success">+500</h5>
+                                </div>
+                                <small class="text-muted">New tool contributions</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 alert alert-dark border-success">
+                    <p class="mb-0 text-success">💡 Multiple labels? Points are summed!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
