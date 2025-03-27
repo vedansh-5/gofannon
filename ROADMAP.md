@@ -7,6 +7,7 @@
 -->
 
 ## Complete ✅
+- [Add markdown link checks](https://github.com/The-AI-Alliance/gofannon/pull/187)
 - [[bug] Set git tracking in CommitFiles](https://github.com/The-AI-Alliance/gofannon/pull/181)
 - [Add bug report template](https://github.com/The-AI-Alliance/gofannon/pull/179)
 - [Add Release Notes to Weekly Releases](https://github.com/The-AI-Alliance/gofannon/pull/170)
@@ -15,15 +16,15 @@
 - [Framework Proposal Template](https://github.com/The-AI-Alliance/gofannon/pull/159)
 - [Automate Roadmap Creation](https://github.com/The-AI-Alliance/gofannon/pull/150)
 - [AWS Bedrock Agents (boto3)](https://github.com/The-AI-Alliance/gofannon/pull/107)
-- [Stub out Integration Tests](https://github.com/The-AI-Alliance/gofannon/pull/89)
-- [Publish to PyPi](https://github.com/The-AI-Alliance/gofannon/pull/73)
-- [Differentiating workflows between website/docs and code](https://github.com/The-AI-Alliance/gofannon/pull/72)
 
 ## Under Construction 🚧
+- [[Docs/Website] how to commit new framework](https://github.com/The-AI-Alliance/gofannon/issues/200)
+- [[Framework Proposal] Langflow](https://github.com/The-AI-Alliance/gofannon/issues/185)
 - [[Framework Proposal] Llamastack](https://github.com/The-AI-Alliance/gofannon/issues/161)
 - [AI Alliance Labs - standup a SQL database](https://github.com/The-AI-Alliance/gofannon/issues/144)
 
 ## In the Roadmap 📅
+- [[Issue] refactor unit test to run as a matrix](https://github.com/The-AI-Alliance/gofannon/issues/197)
 - [[EXAMPLES] rerun `examples/smolagents+gofannon_quickstart.ipynb` to get rid of warnings and errors](https://github.com/The-AI-Alliance/gofannon/issues/176)
 - [[Docs/Website] explicit how to guide on updating the website](https://github.com/The-AI-Alliance/gofannon/issues/168)
 - [[Framework Proposal] Genkit Integration](https://github.com/The-AI-Alliance/gofannon/issues/163)
