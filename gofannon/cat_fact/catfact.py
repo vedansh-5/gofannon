@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 @FunctionRegistry.register
 class CatFact(BaseTool):
     def __init__(self, name = "catfact"):
-        super()._init()
+        super().__init()
         self.name = name
     
     @property
