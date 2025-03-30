@@ -13,7 +13,8 @@ layout: default
         background-color: #0f0f23;
         color: #00ff00;
         font-family: 'Press Start 2P', cursive;
-        min-height: 100vh;
+        flex-grow: 1;
+
     }
 
     .leaderboard-heading {
@@ -45,11 +46,9 @@ layout: default
     }
 
     .leaderboard-table {
-        width: 90%;
-        margin: 2rem auto;
-        border: 4px solid #00ff00;
-        border-collapse: collapse;
-        box-shadow: 0 0 20px #00ff00;
+        width: 100%;
+        min-width: 600px; /* Ensures table doesn't squish on small screens */
+        table-layout: auto;
     }
 
     .leaderboard-table th {
@@ -85,11 +84,35 @@ layout: default
     .leaderboard-table a:hover {
         text-shadow: 0 0 10px #ffff00;
     }
+
+    .leaderboard-table-wrapper {
+        overflow-x: auto;
+        max-width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        position: relative;
+        z-index: 10;
+        padding: 0 1rem;
+    }
+
+
+
+
+
 </style>
 
 <div class="leaderboard-container">
     <h1 class="leaderboard-heading">LEADERBOARD</h1>
-
+    <div class="text-center my-4">
+        <button
+                type="button"
+                class="btn btn-outline-success px-4 py-2"
+                data-bs-toggle="modal"
+                data-bs-target="#scoringModal"
+                style="font-family: 'Press Start 2P', cursive; font-size: 0.8rem;"
+        >
+            🕹️ HOW SCORING WORKS?
+        </button>
+    </div>
     <!-- Animated GIF -->
     <img
             src="{{ '/assets/images/leaderboard-animation.gif' | relative_url }}"
@@ -100,8 +123,11 @@ layout: default
 
     <!-- Leaderboard content -->
     <div class="leaderboard-content">
-        {{ content }}
+        <div class="leaderboard-table-wrapper">
+            {{ content }}
+        </div>
     </div>
+
 </div>
 
 <script>
@@ -119,3 +145,5 @@ layout: default
         });
     });
 </script>
+
+{% include scoring.html %}

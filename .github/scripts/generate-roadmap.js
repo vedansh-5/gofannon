@@ -1,6 +1,6 @@
 module.exports = async ({github, context}) => {
   // Configuration  
-  const ignoreLabels = ['bug', 'docs', 'cowboy']; // Labels to ignore
+  const ignoreLabels = ['docs', 'cowboy']; // Labels to ignore
   const roadmapLabel = 'roadmap'; // Special label that overrides ignoreLabels  
 
   // Fetch both issues and pull requests
