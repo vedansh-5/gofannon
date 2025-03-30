@@ -13,7 +13,8 @@ class ToolConfig:
             'deepinfra_api_key': os.getenv('DEEPINFRA_API_KEY'),
             'arxiv_api_key': os.getenv('ARXIV_API_KEY'),
             'google_search_api_key': os.getenv('GOOGLE_SEARCH_API_KEY'),
-            'google_search_engine_id': os.getenv('GOOGLE_SEARCH_ENGINE_ID')
+            'google_search_engine_id': os.getenv('GOOGLE_SEARCH_ENGINE_ID'),
+            'nasa_apod_api_key': os.getenv('NASA_APOD_API_KEY'),
         }
 
     @classmethod
