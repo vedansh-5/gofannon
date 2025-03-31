@@ -6,7 +6,7 @@ import requests
 logger = logging.getLogger(__name__)
 
 @FunctionRegistry.register
-class apod(BaseTool):
+class AstronomyPhotoOfTheDayTool(BaseTool):
     def __init__(self, api_key=None ,name='apod'):
         super().__init__()
         self.name = name
