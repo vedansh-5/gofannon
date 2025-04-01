@@ -7,38 +7,11 @@
 -->
 
 ## Complete ✅
-- [[NEW CORE CONTRIBUTOR] vedansh-5](https://github.com/The-AI-Alliance/gofannon/pull/203)
-- [[INFRA] Add markdown link checks](https://github.com/The-AI-Alliance/gofannon/pull/187)
-- [[Bug] Example pip install points to old branch](https://github.com/The-AI-Alliance/gofannon/pull/183)
-- [[bug] Set git tracking in CommitFiles](https://github.com/The-AI-Alliance/gofannon/pull/181)
-- [[INFRA] Add bug report template](https://github.com/The-AI-Alliance/gofannon/pull/179)
-- [[TOOL] Wikipedia api](https://github.com/The-AI-Alliance/gofannon/pull/177)
-- [[BUG] smolagents parameter bug](https://github.com/The-AI-Alliance/gofannon/pull/175)
-- [[BUG} Pydantic Mess](https://github.com/The-AI-Alliance/gofannon/pull/173)
-- [Add Release Notes to Weekly Releases](https://github.com/The-AI-Alliance/gofannon/pull/170)
-- [[DOCS] How to conribute a Tool](https://github.com/The-AI-Alliance/gofannon/pull/167)
-- [Update logo and favicon](https://github.com/The-AI-Alliance/gofannon/pull/165)
-- [Framework Proposal Template](https://github.com/The-AI-Alliance/gofannon/pull/159)
-- [labels in PRs](https://github.com/The-AI-Alliance/gofannon/pull/157)
-- [Fix Bug in roadmap gen](https://github.com/The-AI-Alliance/gofannon/pull/155)
-- [Automate Roadmap Creation](https://github.com/The-AI-Alliance/gofannon/pull/150)
-- [AWS Bedrock Agents (boto3)](https://github.com/The-AI-Alliance/gofannon/pull/107)
-- [Install Poetry](https://github.com/The-AI-Alliance/gofannon/pull/90)
+- [wikipedia_lookupFn](https://github.com/vedansh-5/gofannon/pull/1)
 
 ## Under Construction 🚧
-- [[Docs/Website] how to commit new framework](https://github.com/The-AI-Alliance/gofannon/issues/200)
-- [[Bug] Add Code of Conduct](https://github.com/The-AI-Alliance/gofannon/issues/194)
-- [[Framework Proposal] Langflow](https://github.com/The-AI-Alliance/gofannon/issues/185)
-- [[Framework Proposal] Llamastack](https://github.com/The-AI-Alliance/gofannon/issues/161)
-- [AI Alliance Labs - standup a SQL database](https://github.com/The-AI-Alliance/gofannon/issues/144)
+No items in progress
+
 
 ## In the Roadmap 📅
-- [[Issue] refactor unit test to run as a matrix](https://github.com/The-AI-Alliance/gofannon/issues/197)
-- [[EXAMPLES] rerun `examples/smolagents+gofannon_quickstart.ipynb` to get rid of warnings and errors](https://github.com/The-AI-Alliance/gofannon/issues/176)
-- [[Docs/Website] explicit how to guide on updating the website](https://github.com/The-AI-Alliance/gofannon/issues/168)
-- [[Framework Proposal] Genkit Integration](https://github.com/The-AI-Alliance/gofannon/issues/163)
-- [[Framework Proposal] AWS Bedrock CDK Integration](https://github.com/The-AI-Alliance/gofannon/issues/162)
-- [[Issue] Restore type hints on the boto3, smol_agents and langchain backends](https://github.com/The-AI-Alliance/gofannon/issues/114)
-- [[Issue] Need to create boto3 integration tests](https://github.com/The-AI-Alliance/gofannon/issues/113)
-- [[Issue] Review boto3 unit tests](https://github.com/The-AI-Alliance/gofannon/issues/112)
-- [[Issue] Python Black Formatting Standard](https://github.com/The-AI-Alliance/gofannon/issues/108)
+No upcoming items
