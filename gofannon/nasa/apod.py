@@ -43,11 +43,11 @@ class AstronomyPhotoOfTheDayTool(BaseTool):
             data = response.json()
 
             return{
-                "title": data.get("title"),
-                "date": data.get("date"),
-                "explanation": data.get("explanation"),
-                "image_url": data.get("url"),
-                "media_type": data.get("media_type"),
+                "title": data.get("title", "No title available"),
+                "date": data.get("date", "No date available"),
+                "explanation": data.get("explanation", "No explanation available"),
+                "image_url": data.get("url", None),
+                "media_type": data.get("media_type", "unknown"),
             }
         except requests.exceptions.RequestException as e:
             logger.error(f"Error fetching data from NASA APOD: {e}")
