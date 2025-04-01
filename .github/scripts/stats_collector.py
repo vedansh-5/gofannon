@@ -86,8 +86,8 @@ def get_github_daily_stats(github_token, repo_name):
         return {
             'github_views': traffic.count,#sum(view.count for view in traffic['views']),
             'github_unique_visitors': traffic.uniques, #sum(view.uniques for view in traffic['views']),
-            'github_clones': clone.count, #sum(clone.count for clone in clones['clones']),
-            'github_unique_cloners': clone.uniques, #sum(clone.uniques for clone in clones['clones']),
+            'github_clones': clones.count, #sum(clone.count for clone in clones['clones']),
+            'github_unique_cloners': clones.uniques, #sum(clone.uniques for clone in clones['clones']),
             'github_stars': repo.stargazers_count,
             'github_forks': repo.forks_count
         }
