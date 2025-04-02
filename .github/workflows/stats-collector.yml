@@ -4,6 +4,7 @@ on:
     - cron: '1 0 * * *'  # Runs at 00:01 UTC every day
   workflow_dispatch:  # Allows manual triggering
 
+
 permissions:  
   contents: write        # Needed to commit stats  
   actions: read         # Needed for repository info  
@@ -47,3 +48,4 @@ jobs:
           git add website/community/stats.csv   
           git diff --quiet && git diff --staged --quiet || git commit -m "Update GH and GA Stats"  
           git push  
+
