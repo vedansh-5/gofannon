@@ -42,5 +42,17 @@ class CatFact(BaseTool):
             return {"fact" : data.get("fact", "No fact found")}
         
         except requests.exceptions.RequestException as e:
-            logger.error(f"Error fetching cat fact: {e}")
+            logger.error(f"JSON decoding error: {e}")
+            return {"error": f"JSONDecodeError: {str(e)}"}
+        
+        except requests.exceptions.Timeout:
+            logger.error("Request timed out.")
+            return {"error": "Timeout: The request timed out."}
+        
+        except requests.exceptions.ConnectionError:
+            logger.error("Network error occured.")
+            return {"error": "ConnectionError: A network error occured."}
+        
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Error fetching cat fact : {e}")
             return {"error": str(e)}
