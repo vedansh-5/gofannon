@@ -5,6 +5,18 @@ import requests
 
 logger = logging.getLogger(__name__)
 
+"""Fetch the Astronomy Picture of the Day (APOD) from NASA's API.
+
+This tool retrieves the daily astronomy image, including metadata such as the 
+title, explanation, date, and media type. It interacts with NASA's APOD API 
+and returns the data as a structured dictionary.
+
+Authentication:
+        Requires an API key from NASA, available at https://api.nasa.gov/
+        The API key should be set in the environment as NASA_APOD_API_KEY
+        or passed as an argument during initialization.
+"""
+
 @FunctionRegistry.register
 class AstronomyPhotoOfTheDayTool(BaseTool):
     def __init__(self, api_key=None ,name='apod'):
