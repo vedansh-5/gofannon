@@ -46,7 +46,7 @@ class AstronomyPhotoOfTheDayTool(BaseTool):
                 "title": data.get("title", "No title available"),
                 "date": data.get("date", "No date available"),
                 "explanation": data.get("explanation", "No explanation available"),
-                "image_url": data.get("url", None),
+                "url": data.get("url", None),
                 "media_type": data.get("media_type", "unknown"),
             }
         except requests.exceptions.RequestException as e:

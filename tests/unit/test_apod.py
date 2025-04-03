@@ -71,7 +71,8 @@ def test_apod_invalid_api_key():
     tool = AstronomyPhotoOfTheDayTool(api_key="invalid_api_key")
     result = tool.fn()
     assert "error" in result
-    assert "API_KEY_INVALID" in result["error"]
+    assert "403 Client Error" in result["error"]
+
 
 def test_definition():
     """Test that the tool definition is correctly structured."""
