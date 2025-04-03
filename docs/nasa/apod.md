@@ -9,7 +9,7 @@ Function fetches the APOD data and returns a structured dictionary:
 ```
 {
     "title": "Astronomy Picture Title",
-    "description": "A brief explanation of the APOD...",
+    "explanation": "A brief explanation of the APOD...",
     "image": "https://apod.nasa.gov/apod/image.jpg",
     "url": "https://apod.nasa.gov/apod/apOD20240403.html"
 }

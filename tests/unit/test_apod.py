@@ -29,7 +29,7 @@ def test_apod_successful_response():
     assert result["media_type"] == "image"
 
 def test_apod_missing_api_key():
-    "Test APOD tool when the API key is missing."""
+    """Test APOD tool when the API key is missing."""
     tool = AstronomyPhotoOfTheDayTool(api_key=None)
     result = tool.fn()
 
@@ -38,7 +38,7 @@ def test_apod_missing_api_key():
 
 @responses.activate
 def test_apod_error_response():
-    """Test APOD tool with an error response from th API."""
+    """Test APOD tool with an error response from the API."""
     responses.add(
         responses.GET,
         "https://api.nasa.gov/planetary/apod",
