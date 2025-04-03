@@ -8,7 +8,7 @@ def test_apod_successful_response():
     mock_response = {
         "title": "Astronomy Picture of the Day",
         "date": "2025-04-01",
-        "explanation": "This is a test explanation.",
+        "explanation": "This is a test explanation for the APOD.",
         "url": "https://example.com/image.jpg",
         "media_type": "image",
     }
