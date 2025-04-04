@@ -7,13 +7,14 @@
 -->
 
 ## Complete ✅
+- [[Example] Drop examples that contain complex_response](https://github.com/The-AI-Alliance/gofannon/pull/211)
 - [[NEW CORE CONTRIBUTOR] vedansh-5](https://github.com/The-AI-Alliance/gofannon/pull/203)
-- [[INFRA] Add markdown link checks](https://github.com/The-AI-Alliance/gofannon/pull/187)
+- [Add documentation for contributing new agentic framework](https://github.com/The-AI-Alliance/gofannon/pull/201)
+- [[Bug] Updating imports in Basic_Math.ipnb](https://github.com/The-AI-Alliance/gofannon/pull/184)
 - [[Bug] Example pip install points to old branch](https://github.com/The-AI-Alliance/gofannon/pull/183)
-- [[bug] Set git tracking in CommitFiles](https://github.com/The-AI-Alliance/gofannon/pull/181)
+- [[bug] Set git tracking in github.CommitFiles](https://github.com/The-AI-Alliance/gofannon/pull/181)
 - [[INFRA] Add bug report template](https://github.com/The-AI-Alliance/gofannon/pull/179)
 - [[TOOL] Wikipedia api](https://github.com/The-AI-Alliance/gofannon/pull/177)
-- [[BUG] smolagents parameter bug](https://github.com/The-AI-Alliance/gofannon/pull/175)
 - [[BUG} Pydantic Mess](https://github.com/The-AI-Alliance/gofannon/pull/173)
 - [Add Release Notes to Weekly Releases](https://github.com/The-AI-Alliance/gofannon/pull/170)
 - [[DOCS] How to conribute a Tool](https://github.com/The-AI-Alliance/gofannon/pull/167)
@@ -23,16 +24,16 @@
 - [Fix Bug in roadmap gen](https://github.com/The-AI-Alliance/gofannon/pull/155)
 - [Automate Roadmap Creation](https://github.com/The-AI-Alliance/gofannon/pull/150)
 - [AWS Bedrock Agents (boto3)](https://github.com/The-AI-Alliance/gofannon/pull/107)
-- [Install Poetry](https://github.com/The-AI-Alliance/gofannon/pull/90)
 
 ## Under Construction 🚧
-- [[Docs/Website] how to commit new framework](https://github.com/The-AI-Alliance/gofannon/issues/200)
 - [[Bug] Add Code of Conduct](https://github.com/The-AI-Alliance/gofannon/issues/194)
 - [[Framework Proposal] Langflow](https://github.com/The-AI-Alliance/gofannon/issues/185)
 - [[Framework Proposal] Llamastack](https://github.com/The-AI-Alliance/gofannon/issues/161)
 - [AI Alliance Labs - standup a SQL database](https://github.com/The-AI-Alliance/gofannon/issues/144)
 
 ## In the Roadmap 📅
+- [[Bug] Update Leaderboard action only works when run manually.](https://github.com/The-AI-Alliance/gofannon/issues/213)
+- [[RESEARCH] are decorators still necessary or are they A artifact of complex_function ?](https://github.com/The-AI-Alliance/gofannon/issues/210)
 - [[Issue] refactor unit test to run as a matrix](https://github.com/The-AI-Alliance/gofannon/issues/197)
 - [[EXAMPLES] rerun `examples/smolagents+gofannon_quickstart.ipynb` to get rid of warnings and errors](https://github.com/The-AI-Alliance/gofannon/issues/176)
 - [[Docs/Website] explicit how to guide on updating the website](https://github.com/The-AI-Alliance/gofannon/issues/168)
