@@ -4,7 +4,7 @@ title: Leaderboard
 ---
 | Player | Score |
 | :--- | ---: |
-| [@rawkintrevo](https://github.com/rawkintrevo) | 7350 |
+| [@rawkintrevo](https://github.com/rawkintrevo) | 7600 |
 | [@jolson-ibm](https://github.com/jolson-ibm) | 3000 |
 | [@vedansh-5](https://github.com/vedansh-5) | 2300 |
 | [@sheldonhenriques](https://github.com/sheldonhenriques) | 800 |
