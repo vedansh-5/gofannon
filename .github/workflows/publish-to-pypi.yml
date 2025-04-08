@@ -71,13 +71,19 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            await github.rest.repos.updateRelease({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              release_id: ${{ steps.draft-release.outputs.id }},
-              draft: false,
-              name: 'v${{ steps.version.outputs.PYPI_VERSION }}',
-              tag_name: 'v${{ steps.version.outputs.PYPI_VERSION }}'
-            })
-
+           const { data: release } = await github.rest.repos.getRelease({  
+                  owner: context.repo.owner,  
+                  repo: context.repo.repo,  
+                  release_id: ${{ steps.draft-release.outputs.id }}  
+                });  
+                  
+                await github.rest.repos.updateRelease({  
+                  owner: context.repo.owner,  
+                  repo: context.repo.repo,  
+                  release_id: ${{ steps.draft-release.outputs.id }},  
+                  draft: false,  
+                  name: release.name,  
+                  tag_name: release.tag_name,  
+                  body: release.body  
+                });  
 
