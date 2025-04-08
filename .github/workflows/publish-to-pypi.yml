@@ -44,7 +44,6 @@ jobs:
           name: v${{ steps.version.outputs.PYPI_VERSION }}  
           tag: v${{ steps.version.outputs.PYPI_VERSION }}  
           version: ${{ steps.version.outputs.PYPI_VERSION }}  
-          publish: true  # This will publish directly instead of creating a draft  
         env:  
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
   
@@ -67,3 +66,14 @@ jobs:
         with:  
           packages-dir: dist/  
           verbose: true  
+  
+      # Finally, publish the draft release using our external script  
+      - name: Publish Release  
+        uses: actions/github-script@v6  
+        with:  
+          script: |  
+            const publishRelease = require('./.github/scripts/publish-release.js');  
+            await publishRelease({github, context});  
+        env:  
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+          RELEASE_ID: ${{ steps.draft-release.outputs.id }}  
