@@ -1,89 +1,69 @@
-name: Weekly PyPI Release
-
-on:
-  schedule:
-    - cron: '1 0 * * 1'  # Every Monday at 00:01 UTC
-  workflow_dispatch:  # Allow manual triggers
-
-jobs:
-  build-and-publish:
-    runs-on: ubuntu-latest
-    environment: pypi
-    permissions:
-      contents: write  # Needed for creating tags and releases
-      id-token: write  # Needed for trusted publishing
-
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-
-      - name: Generate version number
-        id: version
-        run: python .github/scripts/generate_version.py
-
-      - name: Update pyproject.toml version
-        run: |
-          sed -i "s/^version = .*/version = \"${PYPI_VERSION}\"/" pyproject.toml
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git commit -am "Weekly version bump: ${PYPI_VERSION}"
-          git push
-
-      - name: Generate Release Notes (Draft)
-        uses: release-drafter/release-drafter@v6.1.0
-        with:
-          config-name: release-drafter.yml
-          name: v${{ steps.version.outputs.PYPI_VERSION }}
-          tag: v${{ steps.version.outputs.PYPI_VERSION }}
-          version: ${{ steps.version.outputs.PYPI_VERSION }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Create Git tag
-        id: tag
-        run: |
-          git tag -a ${RELEASE_TAG} -m "Weekly release ${RELEASE_TAG}"
-          git push origin ${RELEASE_TAG}
-          
-
-      - name: Install poetry
-        run: |
-          curl -sSL https://install.python-poetry.org | python3
-          poetry --version
-
-      - name: Build package
-        run: poetry build
-
-      - name: Publish to PyPI
-        uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          packages-dir: dist/
-          verbose: true
-
-      - name: Publish Release
-        uses: actions/github-script@v6
-        with:
-          script: |
-           const { data: release } = await github.rest.repos.getRelease({  
-                  owner: context.repo.owner,  
-                  repo: context.repo.repo,  
-                  release_id: ${{ steps.draft-release.outputs.id }}  
-                });  
-                  
-                await github.rest.repos.updateRelease({  
-                  owner: context.repo.owner,  
-                  repo: context.repo.repo,  
-                  release_id: ${{ steps.draft-release.outputs.id }},  
-                  draft: false,  
-                  name: release.name,  
-                  tag_name: release.tag_name,  
-                  body: release.body  
-                });  
-
+name: Weekly PyPI Release  
+  
+on:  
+  schedule:  
+    - cron: '1 0 * * 1'  # Every Monday at 00:01 UTC  
+  workflow_dispatch:  # Allow manual triggers  
+  
+jobs:  
+  build-and-publish:  
+    runs-on: ubuntu-latest  
+    environment: pypi  
+    permissions:  
+      contents: write  
+      id-token: write  
+  
+    steps:  
+      - uses: actions/checkout@v4  
+        with:  
+          fetch-depth: 0  # Important to get full git history  
+  
+      - name: Set up Python  
+        uses: actions/setup-python@v5  
+        with:  
+          python-version: '3.10'  
+  
+      - name: Generate version number  
+        id: version  
+        run: python .github/scripts/generate_version.py  
+  
+      - name: Update pyproject.toml version  
+        run: |  
+          sed -i "s/^version = .*/version = \"${PYPI_VERSION}\"/" pyproject.toml  
+          git config --global user.name "GitHub Actions"  
+          git config --global user.email "actions@github.com"  
+          git commit -am "Weekly version bump: ${PYPI_VERSION}"  
+          git push  
+  
+      # First generate release notes using the previous tag  
+      - name: Generate Release Notes (Draft)  
+        id: draft-release  
+        uses: release-drafter/release-drafter@v6  
+        with:  
+          config-name: release-drafter.yml  
+          name: v${{ steps.version.outputs.PYPI_VERSION }}  
+          tag: v${{ steps.version.outputs.PYPI_VERSION }}  
+          version: ${{ steps.version.outputs.PYPI_VERSION }}  
+          publish: true  # This will publish directly instead of creating a draft  
+        env:  
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+  
+      # Then create the actual tag  
+      - name: Create Git tag  
+        run: |  
+          git tag -a v${{ steps.version.outputs.PYPI_VERSION }} -m "Weekly release v${{ steps.version.outputs.PYPI_VERSION }}"  
+          git push origin v${{ steps.version.outputs.PYPI_VERSION }}  
+  
+      - name: Install poetry  
+        run: |  
+          curl -sSL https://install.python-poetry.org | python3  
+          poetry --version  
+  
+      - name: Build package  
+        run: poetry build  
+  
+      - name: Publish to PyPI  
+        uses: pypa/gh-action-pypi-publish@release/v1  
+        with:  
+          packages-dir: dist/  
+          verbose: true  
