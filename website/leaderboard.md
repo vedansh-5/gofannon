@@ -10,5 +10,6 @@ title: Leaderboard
 | [@sheldonhenriques](https://github.com/sheldonhenriques) | 800 |
 | [@deanwampler](https://github.com/deanwampler) | 450 |
 | [@Vivkzz](https://github.com/Vivkzz) | 350 |
+| [@Jivi-this-side](https://github.com/Jivi-this-side) | 100 |
 | [@kb-bhatta](https://github.com/kb-bhatta) | 100 |
 | [@andrewmusselman](https://github.com/andrewmusselman) | -800 |
