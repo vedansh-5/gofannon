@@ -15,10 +15,12 @@ title: Home
     <div class="row">  
         <div class="col-md-6">  
             <h2>Framework Portability</h2>  
-            <p>Seamlessly use tools across LangChain, SmolAgents, AWS, and Google Vertex AI. Write once, deploy anywhere.</p>  
+            <p>Seamlessly use tools across multiple frameworks. Write once, deploy anywhere.</p>  
             <div class="badge bg-secondary">LangChain</div>  
             <div class="badge bg-secondary">SmolAgents</div>  
             <div class="badge bg-secondary">AWS CDK</div>  
+            <div class="badge bg-secondary">Langflow</div>  
+            <div class="badge bg-secondary">Anthropic MCP</div>  
         </div>  
         <div class="col-md-6">  
             <h2>Open Source Education</h2>  
