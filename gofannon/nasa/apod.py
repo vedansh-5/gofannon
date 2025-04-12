@@ -36,11 +36,10 @@ class AstronomyPhotoOfTheDayTool(BaseTool):
                     "properties": {},
                     "required": []
                 }
-            },
-            "return_direct": True
+            }
         }
     
-    def fn(self, params: dict, *args, **kwargs) -> dict:
+    def fn(self):
         logger.debug("Fetching NASA APOD data")
         if not self.api_key:
             logger.error("API key is missing. Cannot fetch APOD data.")
