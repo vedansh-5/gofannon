@@ -7,6 +7,9 @@
 -->
 
 ## Complete ✅
+- [Langchain and APOD Example](https://github.com/The-AI-Alliance/gofannon/pull/251)
+- [Fix typo incompatible](https://github.com/The-AI-Alliance/gofannon/pull/239)
+- [Add the Alliance CoC](https://github.com/The-AI-Alliance/gofannon/pull/230)
 - [Fix leaderboard issues](https://github.com/The-AI-Alliance/gofannon/pull/227)
 - [Fix Release Notes](https://github.com/The-AI-Alliance/gofannon/pull/226)
 - [Add example that 'fixes' issues and commits to git](https://github.com/The-AI-Alliance/gofannon/pull/217)
@@ -23,19 +26,22 @@
 - [Add Release Notes to Weekly Releases](https://github.com/The-AI-Alliance/gofannon/pull/170)
 - [[DOCS] How to conribute a Tool](https://github.com/The-AI-Alliance/gofannon/pull/167)
 - [Update logo and favicon](https://github.com/The-AI-Alliance/gofannon/pull/165)
-- [Framework Proposal Template](https://github.com/The-AI-Alliance/gofannon/pull/159)
-- [labels in PRs](https://github.com/The-AI-Alliance/gofannon/pull/157)
-- [Fix Bug in roadmap gen](https://github.com/The-AI-Alliance/gofannon/pull/155)
-- [Automate Roadmap Creation](https://github.com/The-AI-Alliance/gofannon/pull/150)
 
 ## Under Construction 🚧
-- [[Bug] Fix Release Notes](https://github.com/The-AI-Alliance/gofannon/issues/225)
-- [[Bug] Add Code of Conduct](https://github.com/The-AI-Alliance/gofannon/issues/194)
-- [[Framework Proposal] Llamastack](https://github.com/The-AI-Alliance/gofannon/issues/161)
+No items in progress
+
 
 ## In the Roadmap 📅
-- [[RESEARCH] are decorators still necessary or are they A artifact of complex_function ?](https://github.com/The-AI-Alliance/gofannon/issues/210)
+- [[Function Proposal] github.CloneRepo](https://github.com/The-AI-Alliance/gofannon/issues/263)
+- [[Function Proposal] github.ListIssues](https://github.com/The-AI-Alliance/gofannon/issues/262)
+- [[Function Proposal] file.ReadFile](https://github.com/The-AI-Alliance/gofannon/issues/261)
+- [[Function Proposal] file.WriteFile](https://github.com/The-AI-Alliance/gofannon/issues/260)
+- [[Function Proposal] file.ListDirectory](https://github.com/The-AI-Alliance/gofannon/issues/259)
+- [Typo in Quickstart](https://github.com/The-AI-Alliance/gofannon/issues/256)
+- [Typo in File Name for Addition Documentation](https://github.com/The-AI-Alliance/gofannon/issues/255)
+- [Spelling Error in Exponents Documentation](https://github.com/The-AI-Alliance/gofannon/issues/254)
+- [Grammatical Error in Origins of the Name Gofannon](https://github.com/The-AI-Alliance/gofannon/issues/247)
+- [[Framework Proposal] Langgraph](https://github.com/The-AI-Alliance/gofannon/issues/237)
 - [[EXAMPLES] rerun `examples/smolagents+gofannon_quickstart.ipynb` to get rid of warnings and errors](https://github.com/The-AI-Alliance/gofannon/issues/176)
 - [[Docs/Website] explicit how to guide on updating the website](https://github.com/The-AI-Alliance/gofannon/issues/168)
 - [[Framework Proposal] Genkit Integration](https://github.com/The-AI-Alliance/gofannon/issues/163)
-- [[Framework Proposal] AWS Bedrock CDK Integration](https://github.com/The-AI-Alliance/gofannon/issues/162)
