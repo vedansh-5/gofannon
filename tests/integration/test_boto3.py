@@ -3,7 +3,7 @@ import json
 import sys
 
 # Pass in as a param
-build = True
+build = True 
 
 if build:
     agent_app_config = {
@@ -28,13 +28,15 @@ if build:
 
     print(json.dumps(bedrock_config, indent=3))
 else:
+    account_id = "<aws account id>"
+    region = "<aws region>"
     bedrock_config = {
-        "lambdaARN": "arn:aws:lambda:us-east-1:843382705282:function:gofannon_demo_iss_locator",
+        "lambdaARN": f"arn:aws:lambda:{region}:{account_id}:function:gofannon_demo_iss_locator",
         "lambdaRoleName": "gofannon_demo_bedrock_lambda_execution_role",
-        "agentId": "HJVJBDR7JJ",
+        "agentId": "I9CGGKG3X8",
         "agentRoleName": "gofannon_demo_bedrock_agent_execution_role",
-        "agentPolicyARN": "arn:aws:iam::843382705282:policy/gofannon_demo_bedrock_agent_allow_model",
-        "agentActionGroup": "ZMQOSJBY7V",
+        "agentPolicyARN": f"arn:aws:iam::{account_id}:policy/gofannon_demo_bedrock_agent_allow_model",
+        "agentActionGroup": "FBWX2MIEZJ",
     }
 
     iss_locator = IssLocator()
