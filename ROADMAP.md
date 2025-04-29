@@ -7,6 +7,8 @@
 -->
 
 ## Complete ✅
+- [Add automated Analytics collection](https://github.com/The-AI-Alliance/gofannon/pull/281)
+- [[Unit Test] Llamastack Framework](https://github.com/The-AI-Alliance/gofannon/pull/280)
 - [[Tool] file.ReadFile](https://github.com/The-AI-Alliance/gofannon/pull/270)
 - [Langchain and APOD Example](https://github.com/The-AI-Alliance/gofannon/pull/251)
 - [Fix typo incompatible](https://github.com/The-AI-Alliance/gofannon/pull/239)
@@ -20,20 +22,17 @@
 - [[FRAMEWORK] Langflow](https://github.com/The-AI-Alliance/gofannon/pull/196)
 - [[Bug] Updating imports in Basic_Math.ipnb](https://github.com/The-AI-Alliance/gofannon/pull/184)
 - [[Bug] Example pip install points to old branch](https://github.com/The-AI-Alliance/gofannon/pull/183)
-- [[bug] Set git tracking in github.CommitFiles](https://github.com/The-AI-Alliance/gofannon/pull/181)
-- [[INFRA] Add bug report template](https://github.com/The-AI-Alliance/gofannon/pull/179)
-- [[TOOL] Wikipedia api](https://github.com/The-AI-Alliance/gofannon/pull/177)
-- [[BUG} Pydantic Mess](https://github.com/The-AI-Alliance/gofannon/pull/173)
-- [Add Release Notes to Weekly Releases](https://github.com/The-AI-Alliance/gofannon/pull/170)
 
 ## Under Construction 🚧
 No items in progress
 
 
 ## In the Roadmap 📅
+- [[DEMO] Langchain + smolagents tools into an MCP server](https://github.com/The-AI-Alliance/gofannon/issues/288)
+- [[Bug] Update Jekyll version to support Ruby 3.4+ environments](https://github.com/The-AI-Alliance/gofannon/issues/285)
+- [[Bug] Update release notes to call out tools and frameworks](https://github.com/The-AI-Alliance/gofannon/issues/274)
 - [Typo in Quickstart](https://github.com/The-AI-Alliance/gofannon/issues/256)
 - [Typo in File Name for Addition Documentation](https://github.com/The-AI-Alliance/gofannon/issues/255)
 - [Spelling Error in Exponents Documentation](https://github.com/The-AI-Alliance/gofannon/issues/254)
 - [Grammatical Error in Origins of the Name Gofannon](https://github.com/The-AI-Alliance/gofannon/issues/247)
 - [[Framework Proposal] Langgraph](https://github.com/The-AI-Alliance/gofannon/issues/237)
-- [[EXAMPLES] rerun `examples/smolagents+gofannon_quickstart.ipynb` to get rid of warnings and errors](https://github.com/The-AI-Alliance/gofannon/issues/176)
