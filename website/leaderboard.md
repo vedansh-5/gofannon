@@ -10,7 +10,7 @@ title: Leaderboard
 | [@vedansh-5](https://github.com/vedansh-5) | 2600 |
 | [@deanwampler](https://github.com/deanwampler) | 450 |
 | [@Vivkzz](https://github.com/Vivkzz) | 350 |
-| [@truffleplanet](https://github.com/truffleplanet) | 100 |
+| [@truffleplanet](https://github.com/truffleplanet) | 200 |
 | [@Shameed4](https://github.com/Shameed4) | 100 |
 | [@shivnshshrma](https://github.com/shivnshshrma) | 100 |
 | [@Jivi-this-side](https://github.com/Jivi-this-side) | 100 |
