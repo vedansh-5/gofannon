@@ -15,4 +15,5 @@ title: Leaderboard
 | [@shivnshshrma](https://github.com/shivnshshrma) | 100 |
 | [@Jivi-this-side](https://github.com/Jivi-this-side) | 100 |
 | [@kb-bhatta](https://github.com/kb-bhatta) | 100 |
+| [@iabhi4](https://github.com/iabhi4) | 0 |
 | [@andrewmusselman](https://github.com/andrewmusselman) | -800 |
