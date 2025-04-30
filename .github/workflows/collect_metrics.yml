@@ -10,10 +10,6 @@ jobs:
     runs-on: ubuntu-latest  
     permissions:  
       contents: read  # Read repo content (needed for repo object)  
-      # Required for Traffic API and Contributor Stats API:  
-      repository-projects: read # Or higher if needed, check API requirements  
-      # Required for configuring AWS credentials with OIDC (optional but recommended)  
-      # id-token: write  
   
     steps:  
       - name: Checkout code  
@@ -49,7 +45,7 @@ jobs:
       - name: Run metrics collection script  
         id: collect_metrics # Give the step an id to potentially reference output later if needed  
         env:  
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use the default action token  
+          GITHUB_TOKEN: ${{ secrets.SPECIAL_GH_TOKEN }} # Use the default action token  
           # GITHUB_REPOSITORY is automatically set by the runner  
         run: python .github/scripts/collect_metrics.py # Assuming your script is named this  
   
