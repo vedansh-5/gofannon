@@ -137,7 +137,7 @@ git rebase --continue
 
 ## Next Steps
 
-- Join our [Discord](https://discord.gg/YOUR_INVITE_CODE) for real-time help
+- Join our [Discord]({{ site.discord_link }}) for real-time help
 - Explore more issues to contribute to
 - Consider becoming a regular contributor
 
