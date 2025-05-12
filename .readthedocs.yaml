@@ -8,7 +8,8 @@ build:
     ruby: "3.3"  
   
   commands:  
-    - echo "--- Initial working directory: $(pwd) ---"  
+    - echo "--- Initial working directory: ---"
+    - pwd
     - python website/scripts/sync_docs.py  
     - echo "--- After sync_docs.py, about to enter website directory ---"  
     # Use a multi-line block to ensure commands run within 'website'  
