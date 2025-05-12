@@ -8,7 +8,7 @@ build:
     ruby: "3.3"  
   
   commands:  
-    - echo "--- Initial working directory: ---"
+    - echo "--- Initial working directory ---"
     - pwd
     - python website/scripts/sync_docs.py  
     - echo "--- After sync_docs.py, about to enter website directory ---"  
@@ -17,8 +17,8 @@ build:
       set -e # Exit immediately if a command exits with a non-zero status.  
       echo "--- Changing directory to website ---"  
       cd website  
-      echo "--- Current directory (should be .../website): $(pwd) ---"  
-      echo "--- Listing contents of website directory: ---"  
+      echo "--- Current directory (should be .../website) $(pwd) ---"  
+      echo "--- Listing contents of website directory ---"  
       ls -la  
       echo "--- Installing bundler ---"  
       gem install bundler  
