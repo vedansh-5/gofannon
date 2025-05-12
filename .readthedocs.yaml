@@ -13,12 +13,12 @@ build:
     - echo "--- Listing root directory contents ---"  
     - ls -la  
     - python website/scripts/sync_docs.py  
-    - echo "--- Working directory before 'cd website' ---"  
+    - echo "--- Working directory before cd website ---"  
     - pwd  
     - cd website  
-    - echo "--- Working directory AFTER 'cd website' (should be /path/to/checkout/website) ---"  
+    - echo "--- Working directory AFTER cd website (should be /path/to/checkout/website) ---"  
     - pwd  
-    - echo "--- Listing contents of 'website/' directory ---"  
+    - echo "--- Listing contents of website/ directory ---"  
     - ls -la  # This command is crucial - it will show if Gemfile is here  
     - gem install bundler  
     - bundle install # This is where it's failing  
