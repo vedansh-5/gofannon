@@ -8,18 +8,21 @@ build:
     ruby: "3.3"  
   
   commands:  
-    - echo "--- Initial working directory ---"  
-    - pwd  
-    - echo "--- Listing root directory contents ---"  
-    - ls -la  
+    - echo "--- Initial working directory: $(pwd) ---"  
     - python website/scripts/sync_docs.py  
-    - echo "--- Working directory before cd website ---"  
-    - pwd  
-    - cd website  
-    - echo "--- Working directory AFTER cd website (should be /path/to/checkout/website) ---"  
-    - pwd  
-    - echo "--- Listing contents of website/ directory ---"  
-    - ls -la  # This command is crucial - it will show if Gemfile is here  
-    - gem install bundler  
-    - bundle install # This is where it's failing  
-    - bundle exec jekyll build --config _config.yml,_config_rtd.yml --destination ../_readthedocs/html  
+    - echo "--- After sync_docs.py, about to enter website directory ---"  
+    # Use a multi-line block to ensure commands run within 'website'  
+    - |  
+      set -e # Exit immediately if a command exits with a non-zero status.  
+      echo "--- Changing directory to website ---"  
+      cd website  
+      echo "--- Current directory (should be .../website): $(pwd) ---"  
+      echo "--- Listing contents of website directory: ---"  
+      ls -la  
+      echo "--- Installing bundler ---"  
+      gem install bundler  
+      echo "--- Running bundle install ---"  
+      bundle install  
+      echo "--- Building Jekyll site ---"  
+      bundle exec jekyll build --config _config.yml,_config_rtd.yml --destination ../_readthedocs/html  
+      echo "--- Jekyll build complete ---"  
