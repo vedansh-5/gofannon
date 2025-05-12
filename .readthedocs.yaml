@@ -1,17 +1,25 @@
-# .readthedocs.yaml
-version: 2
-
-build:
-  os: ubuntu-24.04
-  tools:
-    python: "3.10"
-    ruby: "3.3"
-
-  commands:
-    - python website/scripts/sync_docs.py
-    - cd website
-    - gem install bundler
-    - bundle install
-    # Use both _config.yml and _config_rtd.yml.
-    # Settings in _config_rtd.yml will override _config.yml
-    - bundle exec jekyll build --config _config.yml,_config_rtd.yml --destination ../_readthedocs/html
+# .readthedocs.yaml  
+version: 2  
+  
+build:  
+  os: ubuntu-24.04  
+  tools:  
+    python: "3.10"  
+    ruby: "3.3"  
+  
+  commands:  
+    - echo "--- Initial working directory ---"  
+    - pwd  
+    - echo "--- Listing root directory contents ---"  
+    - ls -la  
+    - python website/scripts/sync_docs.py  
+    - echo "--- Working directory before 'cd website' ---"  
+    - pwd  
+    - cd website  
+    - echo "--- Working directory AFTER 'cd website' (should be /path/to/checkout/website) ---"  
+    - pwd  
+    - echo "--- Listing contents of 'website/' directory ---"  
+    - ls -la  # This command is crucial - it will show if Gemfile is here  
+    - gem install bundler  
+    - bundle install # This is where it's failing  
+    - bundle exec jekyll build --config _config.yml,_config_rtd.yml --destination ../_readthedocs/html  
