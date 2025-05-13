@@ -7,6 +7,7 @@
 -->
 
 ## Complete ✅
+- [[infra] add readthedocs.yaml](https://github.com/The-AI-Alliance/gofannon/pull/303)
 - [Add automated Analytics collection](https://github.com/The-AI-Alliance/gofannon/pull/281)
 - [[Unit Test] Llamastack Framework](https://github.com/The-AI-Alliance/gofannon/pull/280)
 - [[Tool] file.ReadFile](https://github.com/The-AI-Alliance/gofannon/pull/270)
@@ -19,10 +20,10 @@
 - [[Example] Drop examples that contain complex_response](https://github.com/The-AI-Alliance/gofannon/pull/211)
 - [[NEW CORE CONTRIBUTOR] vedansh-5](https://github.com/The-AI-Alliance/gofannon/pull/203)
 - [Add documentation for contributing new agentic framework](https://github.com/The-AI-Alliance/gofannon/pull/201)
-- [[FRAMEWORK] Langflow](https://github.com/The-AI-Alliance/gofannon/pull/196)
 
 ## Under Construction 🚧
-- [[Function Proposal] Simpler.Grants.gov](https://github.com/The-AI-Alliance/gofannon/issues/297)
+- [[Framework Proposal] LlamaIndex](https://github.com/The-AI-Alliance/gofannon/issues/301)
+- [[Framework Proposal] The non-framework integration](https://github.com/The-AI-Alliance/gofannon/issues/300)
 - [[Function Proposal] Marginalia Search](https://github.com/The-AI-Alliance/gofannon/issues/295)
 - [[Bug] ./github/scripts/collect_metrics.py parquet output not consumable by AWS Athena](https://github.com/The-AI-Alliance/gofannon/issues/289)
 
