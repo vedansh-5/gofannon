@@ -3,7 +3,7 @@ name: Collect Repo Metrics and Upload to S3
 on:  
   workflow_dispatch: # Allows manual triggering  
   schedule:  
-    - cron: '0 5 * * *' # Run daily at 5 AM UTC  
+    - cron: '0 0 * * *' # Run daily at 5 AM UTC  
   
 jobs:  
   collect-and-upload-metrics:  
