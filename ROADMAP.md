@@ -18,8 +18,6 @@
 - [Fix Release Notes](https://github.com/The-AI-Alliance/gofannon/pull/226)
 - [Add example that 'fixes' issues and commits to git](https://github.com/The-AI-Alliance/gofannon/pull/217)
 - [[Example] Drop examples that contain complex_response](https://github.com/The-AI-Alliance/gofannon/pull/211)
-- [[NEW CORE CONTRIBUTOR] vedansh-5](https://github.com/The-AI-Alliance/gofannon/pull/203)
-- [Add documentation for contributing new agentic framework](https://github.com/The-AI-Alliance/gofannon/pull/201)
 
 ## Under Construction 🚧
 - [[Framework Proposal] LlamaIndex](https://github.com/The-AI-Alliance/gofannon/issues/301)
@@ -31,7 +29,4 @@
 - [[Bug] PR Labeler: curl (3) URL rejected when adding first time contributor label](https://github.com/The-AI-Alliance/gofannon/issues/292)
 - [[DEMO] Langchain + smolagents tools into an MCP server](https://github.com/The-AI-Alliance/gofannon/issues/288)
 - [Typo in Quickstart](https://github.com/The-AI-Alliance/gofannon/issues/256)
-- [Typo in File Name for Addition Documentation](https://github.com/The-AI-Alliance/gofannon/issues/255)
-- [Spelling Error in Exponents Documentation](https://github.com/The-AI-Alliance/gofannon/issues/254)
-- [Grammatical Error in Origins of the Name Gofannon](https://github.com/The-AI-Alliance/gofannon/issues/247)
 - [[Framework Proposal] Langgraph](https://github.com/The-AI-Alliance/gofannon/issues/237)
