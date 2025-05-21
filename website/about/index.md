@@ -38,6 +38,6 @@ We make AI development accessible by:
 - Weekly office hours
 
 ## Communication Channels
-- **[Discord](https://discord.gg/cMFUaGBP)**: Real-time collaboration and support
+- **[Discord]({{ site.discord_link }})**: Real-time collaboration and support
 - **[GitHub Discussions](https://github.com/The-AI-Alliance/agents-wg/discussions/)**: Technical deep dives, and asynchronous collaboration.
 - **[Community Calls](https://calendar.app.google/c4eKW4zrNiXaue926)**: Bi-weekly video meetings  
