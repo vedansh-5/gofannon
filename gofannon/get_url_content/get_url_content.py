@@ -11,7 +11,9 @@ This tool makes a simple GET request and returns the raw text content.
 It does not render JavaScript or handle complex interactions."""
 
 @FunctionRegistry.register
-class GetUrlContent:
+class GetUrlContent(BaseTool):
+    def __init__(self, name="get_url_content"):
+        self.name = name
 
     @property
     def definition(self):
