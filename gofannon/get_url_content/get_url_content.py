@@ -12,6 +12,8 @@ It does not render JavaScript or handle complex interactions."""
 
 @FunctionRegistry.register
 class GetUrlContent:
+
+    @property
     def definition(self):
         return {
             "type": "function",
