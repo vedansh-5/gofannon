@@ -4,6 +4,7 @@ import logging
 import requests
 import os
 import pdfplumber
+from pdfminer.pdfparser import PDFSyntaxError
 
 logger = logging.getLogger(__name__)
 
@@ -65,7 +66,7 @@ class ReadPdf(BaseTool) :
             
             return "\n".join(text_content)  
         
-        except pdfplumber.exceptions.PDFSyntaxError:  
+        except PDFSyntaxError:  
             logger.error(f"Error parsing PDF (syntax error): {file_path}")  
             return f"Error: Could not parse PDF file '{file_path}'. It might be corrupted or not a valid PDF."  
         except Exception as e:  

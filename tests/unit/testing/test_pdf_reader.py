@@ -30,6 +30,6 @@ def test_definition_schema():
     definition = tool.definition
     assert isinstance(definition,dict)
     assert definition["type"] == "function"
-    assert definition["function"]["name"] == "read_pdf"
+    assert definition["function"]["name"] == "pdf_reader"
     assert "file_path" in definition["function"]["parameters"]["properties"]
                                      
