@@ -7,6 +7,9 @@
 -->
 
 ## Complete ✅
+- [vibe fix to adk bug](https://github.com/The-AI-Alliance/gofannon/pull/319)
+- [Add VertexAI example](https://github.com/The-AI-Alliance/gofannon/pull/314)
+- [remove pydantic warnings](https://github.com/The-AI-Alliance/gofannon/pull/309)
 - [[infra] add readthedocs.yaml](https://github.com/The-AI-Alliance/gofannon/pull/303)
 - [Add automated Analytics collection](https://github.com/The-AI-Alliance/gofannon/pull/281)
 - [[Unit Test] Llamastack Framework](https://github.com/The-AI-Alliance/gofannon/pull/280)
@@ -17,7 +20,6 @@
 - [Fix leaderboard issues](https://github.com/The-AI-Alliance/gofannon/pull/227)
 - [Fix Release Notes](https://github.com/The-AI-Alliance/gofannon/pull/226)
 - [Add example that 'fixes' issues and commits to git](https://github.com/The-AI-Alliance/gofannon/pull/217)
-- [[Example] Drop examples that contain complex_response](https://github.com/The-AI-Alliance/gofannon/pull/211)
 
 ## Under Construction 🚧
 - [[Framework Proposal] LlamaIndex](https://github.com/The-AI-Alliance/gofannon/issues/301)
