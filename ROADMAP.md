@@ -7,28 +7,13 @@
 -->
 
 ## Complete ✅
-- [vibe fix to adk bug](https://github.com/The-AI-Alliance/gofannon/pull/319)
-- [Add VertexAI example](https://github.com/The-AI-Alliance/gofannon/pull/314)
-- [remove pydantic warnings](https://github.com/The-AI-Alliance/gofannon/pull/309)
-- [[infra] add readthedocs.yaml](https://github.com/The-AI-Alliance/gofannon/pull/303)
-- [Add automated Analytics collection](https://github.com/The-AI-Alliance/gofannon/pull/281)
-- [[Unit Test] Llamastack Framework](https://github.com/The-AI-Alliance/gofannon/pull/280)
-- [[Tool] file.ReadFile](https://github.com/The-AI-Alliance/gofannon/pull/270)
-- [Langchain and APOD Example](https://github.com/The-AI-Alliance/gofannon/pull/251)
-- [Fix typo incompatible](https://github.com/The-AI-Alliance/gofannon/pull/239)
-- [Add the Alliance CoC](https://github.com/The-AI-Alliance/gofannon/pull/230)
-- [Fix leaderboard issues](https://github.com/The-AI-Alliance/gofannon/pull/227)
-- [Fix Release Notes](https://github.com/The-AI-Alliance/gofannon/pull/226)
-- [Add example that 'fixes' issues and commits to git](https://github.com/The-AI-Alliance/gofannon/pull/217)
+- [getUrlContent Tool](https://github.com/vedansh-5/gofannon/pull/4)
+- [Pdf](https://github.com/vedansh-5/gofannon/pull/3)
+- [wikipedia_lookupFn](https://github.com/vedansh-5/gofannon/pull/1)
 
 ## Under Construction 🚧
-- [[Framework Proposal] LlamaIndex](https://github.com/The-AI-Alliance/gofannon/issues/301)
-- [[Framework Proposal] The non-framework integration](https://github.com/The-AI-Alliance/gofannon/issues/300)
-- [[Function Proposal] Marginalia Search](https://github.com/The-AI-Alliance/gofannon/issues/295)
-- [[Bug] ./github/scripts/collect_metrics.py parquet output not consumable by AWS Athena](https://github.com/The-AI-Alliance/gofannon/issues/289)
+No items in progress
+
 
 ## In the Roadmap 📅
-- [[Bug] PR Labeler: curl (3) URL rejected when adding first time contributor label](https://github.com/The-AI-Alliance/gofannon/issues/292)
-- [[DEMO] Langchain + smolagents tools into an MCP server](https://github.com/The-AI-Alliance/gofannon/issues/288)
-- [Typo in Quickstart](https://github.com/The-AI-Alliance/gofannon/issues/256)
-- [[Framework Proposal] Langgraph](https://github.com/The-AI-Alliance/gofannon/issues/237)
+No upcoming items
