@@ -22,12 +22,15 @@
 - [Add example that 'fixes' issues and commits to git](https://github.com/The-AI-Alliance/gofannon/pull/217)
 
 ## Under Construction 🚧
+- [[Bug] pdfplumber needs to be installed](https://github.com/The-AI-Alliance/gofannon/issues/322)
 - [[Framework Proposal] LlamaIndex](https://github.com/The-AI-Alliance/gofannon/issues/301)
 - [[Framework Proposal] The non-framework integration](https://github.com/The-AI-Alliance/gofannon/issues/300)
 - [[Function Proposal] Marginalia Search](https://github.com/The-AI-Alliance/gofannon/issues/295)
 - [[Bug] ./github/scripts/collect_metrics.py parquet output not consumable by AWS Athena](https://github.com/The-AI-Alliance/gofannon/issues/289)
 
 ## In the Roadmap 📅
+- [[Issue] There should be an extra 'all' to install all extras](https://github.com/The-AI-Alliance/gofannon/issues/323)
+- [[Issue] Implement Static `manifest.json` for Gofannon Tool Discovery](https://github.com/The-AI-Alliance/gofannon/issues/320)
 - [[Bug] PR Labeler: curl (3) URL rejected when adding first time contributor label](https://github.com/The-AI-Alliance/gofannon/issues/292)
 - [[DEMO] Langchain + smolagents tools into an MCP server](https://github.com/The-AI-Alliance/gofannon/issues/288)
 - [Typo in Quickstart](https://github.com/The-AI-Alliance/gofannon/issues/256)
