@@ -7,6 +7,7 @@
 -->
 
 ## Complete ✅
+- [Pdf plumber bug](https://github.com/The-AI-Alliance/gofannon/pull/324)
 - [vibe fix to adk bug](https://github.com/The-AI-Alliance/gofannon/pull/319)
 - [Add VertexAI example](https://github.com/The-AI-Alliance/gofannon/pull/314)
 - [remove pydantic warnings](https://github.com/The-AI-Alliance/gofannon/pull/309)
@@ -22,7 +23,6 @@
 - [Add example that 'fixes' issues and commits to git](https://github.com/The-AI-Alliance/gofannon/pull/217)
 
 ## Under Construction 🚧
-- [[Bug] pdfplumber needs to be installed](https://github.com/The-AI-Alliance/gofannon/issues/322)
 - [[Framework Proposal] LlamaIndex](https://github.com/The-AI-Alliance/gofannon/issues/301)
 - [[Framework Proposal] The non-framework integration](https://github.com/The-AI-Alliance/gofannon/issues/300)
 - [[Function Proposal] Marginalia Search](https://github.com/The-AI-Alliance/gofannon/issues/295)
