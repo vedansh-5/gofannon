@@ -7,6 +7,7 @@
 -->
 
 ## Complete ✅
+- [Pdf plumber bug](https://github.com/The-AI-Alliance/gofannon/pull/324)
 - [vibe fix to adk bug](https://github.com/The-AI-Alliance/gofannon/pull/319)
 - [Add VertexAI example](https://github.com/The-AI-Alliance/gofannon/pull/314)
 - [remove pydantic warnings](https://github.com/The-AI-Alliance/gofannon/pull/309)
@@ -28,6 +29,8 @@
 - [[Bug] ./github/scripts/collect_metrics.py parquet output not consumable by AWS Athena](https://github.com/The-AI-Alliance/gofannon/issues/289)
 
 ## In the Roadmap 📅
+- [[Issue] There should be an extra 'all' to install all extras](https://github.com/The-AI-Alliance/gofannon/issues/323)
+- [[Issue] Implement Static `manifest.json` for Gofannon Tool Discovery](https://github.com/The-AI-Alliance/gofannon/issues/320)
 - [[Bug] PR Labeler: curl (3) URL rejected when adding first time contributor label](https://github.com/The-AI-Alliance/gofannon/issues/292)
 - [[DEMO] Langchain + smolagents tools into an MCP server](https://github.com/The-AI-Alliance/gofannon/issues/288)
 - [Typo in Quickstart](https://github.com/The-AI-Alliance/gofannon/issues/256)
