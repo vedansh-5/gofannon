@@ -1,5 +1,5 @@
 import pytest
-from gofannon.grant_query import GrantsQueryTool
+from gofannon.grant_query.grant_query import GrantsQueryTool
 import requests
 from unittest.mock import patch, MagicMock
 
