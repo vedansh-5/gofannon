@@ -12,7 +12,7 @@ class GrantsQueryTool(BaseTool):
     Uses the EU Search API to find grant opportunities based on a search query.
     Returns information about matching grants including title, identifier, deadline date and URL.
     """
-    def __init__(self, name="eu_grants_query"):
+    def __init__(self, name="grants_query"):
         super().__init__
         self.name = name
 
