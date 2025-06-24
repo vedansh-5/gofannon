@@ -7,7 +7,7 @@ title: Leaderboard
 | [@rawkintrevo](https://github.com/rawkintrevo) | 15300 |
 | [@sheldonhenriques](https://github.com/sheldonhenriques) | 3700 |
 | [@jolson-ibm](https://github.com/jolson-ibm) | 3100 |
-| [@vedansh-5](https://github.com/vedansh-5) | 2800 |
+| [@vedansh-5](https://github.com/vedansh-5) | 2900 |
 | [@deanwampler](https://github.com/deanwampler) | 450 |
 | [@Vivkzz](https://github.com/Vivkzz) | 350 |
 | [@truffleplanet](https://github.com/truffleplanet) | 300 |
