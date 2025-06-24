@@ -20,9 +20,9 @@
 - [Add the Alliance CoC](https://github.com/The-AI-Alliance/gofannon/pull/230)
 - [Fix leaderboard issues](https://github.com/The-AI-Alliance/gofannon/pull/227)
 - [Fix Release Notes](https://github.com/The-AI-Alliance/gofannon/pull/226)
-- [Add example that 'fixes' issues and commits to git](https://github.com/The-AI-Alliance/gofannon/pull/217)
 
 ## Under Construction 🚧
+- [[Function Proposal] Grant query tool](https://github.com/The-AI-Alliance/gofannon/issues/325)
 - [[Framework Proposal] LlamaIndex](https://github.com/The-AI-Alliance/gofannon/issues/301)
 - [[Framework Proposal] The non-framework integration](https://github.com/The-AI-Alliance/gofannon/issues/300)
 - [[Function Proposal] Marginalia Search](https://github.com/The-AI-Alliance/gofannon/issues/295)
