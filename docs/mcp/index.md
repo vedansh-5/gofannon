@@ -1,21 +1,8 @@
 # MCP Server with Gofannon Tools
 
-If you're reading/interested in this, you're probably running Anthropic's 
-Desktop client, which unfortunately will not work with Colab notebooks. However,
-we leave this guide here to help you get setup and running on your laptop.
+Gofannon can be run via an MCP server; whether on its own or for Anthropic's desktop client.
 
-MCP (in the author's opinion) does not have any real world use case beyond 
-Anthropic Desktop at this time, but he was compelled by his `$DAYJOB` to 
-integrate it anyway, as it is the flavor-of-the-week in the AI hype cycle. If 
-you're using Anthropic Desktop, odds on you will need lots of help for local 
-usage, if you reach out to us on Discord, we can try to help you.
-
-[Anthropic's Documentation](https://github.com/modelcontextprotocol/python-sdk#quickstart)
-may also help. 
-
-The following is an example server.py. You can update it to use any gofannon 
-tool, only the Addition tool is included below- but any tool can be added with 
-the .export_to_mcp method.
+The following is an example `server.py` file. You can update it to use any gofannon tool; the Addition tool is included below, but any tool can be added with the .export_to_mcp method.
 
 ```python
 from mcp.server.fastmcp import FastMCP
@@ -35,4 +22,52 @@ To install for Anthropic Desktop run:
 mcp install server.py
 ```
 
-For additional information [see Anthropic's Documentation](https://github.com/modelcontextprotocol/python-sdk#quickstart)
+For additional information [see Anthropic's Documentation](https://github.com/modelcontextprotocol/python-sdk#quickstart) and their [clickable instructions](https://www.anthropic.com/engineering/desktop-extensions).
+
+## Another example and how to set environment variables for tools
+### Install packages
+`pip install gofannon`
+
+This example `server.py` file includes the Gofannon tools for Arxiv and Google searching, as well as generic URL content fetching:
+```python
+from mcp.server.fastmcp import FastMCP
+from os import getenv
+from gofannon.arxiv.get_article import GetArticle
+from gofannon.arxiv.search import Search
+from gofannon.get_url_content.get_url_content import GetUrlContent
+from gofannon.google_search.google_search import GoogleSearch
+
+# Create an MCP server
+mcp = FastMCP("Gofannon Demo")
+
+# Add arxiv
+get_article = GetArticle()
+get_article.export_to_mcp(mcp)
+search = Search()
+search.export_to_mcp(mcp)
+
+# Add url content
+get_url_content = GetUrlContent()
+get_url_content.export_to_mcp(mcp)
+
+# Add google search
+google_search = GoogleSearch(getenv('GOOGLE_SEARCH_API_KEY'), getenv('GOOGLE_SEARCH_ENGINE_ID'))
+google_search.export_to_mcp(mcp)
+```
+### Run the server
+1. Save the above script in a file, e.g. `server.py`
+2. Export environment variables with the key/ids required
+    * `export GOOGLE_SEARCH_API_KEY=<your-search-api-key>`
+    * `export GOOGLE_SEARCH_ENGINE_ID=<your-search-engine-id>`
+3. `mcp run server.py` (for stdio transport) or `mcp run server.py -t sse` (for sse transport)
+
+### Call the server
+1. Install `cmcp` on your client host
+    * `pip install cmcp`
+2. Make calls
+    * List tools `cmcp http://<hostname-or-IP-address>:8000/sse tools/list`
+    * Use a tool `cmcp http://<hostname-or-IP-address>:8000/sse tools/call name=google_search arguments:='{"query": "mahout"}'`
+
+## For more info
+* [Python SDK for MCP](https://github.com/modelcontextprotocol/python-sdk)
+* [cMCP (cURL for MCP)](https://github.com/RussellLuo/cmcp)
