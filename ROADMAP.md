@@ -22,7 +22,6 @@
 - [Fix Release Notes](https://github.com/The-AI-Alliance/gofannon/pull/226)
 
 ## Under Construction 🚧
-- [[Function Proposal] Grant query tool](https://github.com/The-AI-Alliance/gofannon/issues/325)
 - [[Framework Proposal] LlamaIndex](https://github.com/The-AI-Alliance/gofannon/issues/301)
 - [[Framework Proposal] The non-framework integration](https://github.com/The-AI-Alliance/gofannon/issues/300)
 - [[Function Proposal] Marginalia Search](https://github.com/The-AI-Alliance/gofannon/issues/295)
