@@ -2,7 +2,7 @@
 
 Gofannon can be run via an MCP server; whether on its own or for Anthropic's desktop client.
 
-The following is an example `server.py` file. You can update it to use any gofannon tool; the Addition tool is included below, but any tool can be added with the .export_to_mcp method.
+The following is an example `server.py` file. You can update it to use any Gofannon tool; the Addition tool is included below, but any tool can be added with the .export_to_mcp() method.
 
 ```python
 from mcp.server.fastmcp import FastMCP
