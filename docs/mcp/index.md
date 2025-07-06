@@ -26,8 +26,10 @@ For additional information [see Anthropic's Documentation](https://github.com/mo
 
 ## Another example and how to set environment variables for tools
 ### Install packages
-`poetry install gofannon`
-`pip install mcp[cli]`
+```bash
+poetry install gofannon
+pip install mcp[cli]
+```
 
 This example `server.py` file includes the Gofannon tools for Arxiv and Google searching, as well as generic URL content fetching:
 ```python
