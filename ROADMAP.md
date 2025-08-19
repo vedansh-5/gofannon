@@ -7,6 +7,7 @@
 -->
 
 ## Complete ✅
+- [Create manifest.json](https://github.com/The-AI-Alliance/gofannon/pull/329)
 - [Closes #327 - GitHUb Actions Firing in Forked Repositories and Failing](https://github.com/The-AI-Alliance/gofannon/pull/328)
 - [Pdf plumber bug](https://github.com/The-AI-Alliance/gofannon/pull/324)
 - [vibe fix to adk bug](https://github.com/The-AI-Alliance/gofannon/pull/319)
